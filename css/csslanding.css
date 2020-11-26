@@ -1,0 +1,21 @@
+#noticias{
+    float: right;
+}
+
+#sidebar-container{
+    min-height: 100vh;
+    background-color: #80807D;
+}
+
+#Ofertas1{
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+#menu{
+    margin: 5px;
+}
+
+#cardoferta{
+    margin-top: 10px;
+}
