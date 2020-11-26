@@ -1,6 +1,14 @@
 .card{
 top: 10px;
-left: 450px;
+margin-left: 460px;
+background-color:#ccffff;
+margin-top: 10px;
+margin-bottom: auto;
+}
 
+
+body{
+
+    background-color:#ccffff;
 
 }
