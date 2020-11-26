@@ -1,10 +1,12 @@
 #navbar{
     background-color: #80807D;
     color: #ffffff;
+    border-color: #505050 !important; 
 }
 
 #footer{
     background-color: #40403E;
+    border-color: #505050 !important;
 }
 
 #botonregistr{

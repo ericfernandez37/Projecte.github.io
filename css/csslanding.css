@@ -1,13 +1,16 @@
-#noticias{
-    float: right;
-}
-
 #sidebar-container{
     min-height: 100vh;
-    background-color: #80807D;
+    background-color: #BDBDBD;
+    padding-top: 53px;
+    border-color: #505050 !important;
 }
 
 #Ofertas1{
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+#Ofertas2{
     margin-left: 5px;
     color: #ffffff;
 }
@@ -18,4 +21,14 @@
 
 #cardoferta{
     margin-top: 10px;
+    border-color:  #505050 !important;
 }
+
+#newofer{
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+
