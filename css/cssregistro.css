@@ -1,14 +1,18 @@
-.card{
-top: 10px;
-margin-left: 460px;
-background-color:#ccffff;
-margin-top: 10px;
-margin-bottom: auto;
+#botonacep{
+    margin-right: 2px;
 }
 
+.container{
+    padding-top: 80px;
+    padding-bottom: 276px;
+}
 
-body{
-
-    background-color:#ccffff;
+#fondo-mercado{
+    background-image: url("../img/mercado-fondo.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
 
 }
+

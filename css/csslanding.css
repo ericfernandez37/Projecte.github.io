@@ -1,8 +1,10 @@
-#sidebar-container{
-    min-height: 100vh;
+#sidebar-izquierdo{
+    height: 100%;
     background-color: #BDBDBD;
     padding-top: 53px;
     border-color: #505050 !important;
+    width: 11.5%;
+    padding-bottom: 5px;
 }
 
 #Ofertas1{
@@ -19,16 +21,24 @@
     margin: 5px;
 }
 
+#menu2{
+    margin: 5px;
+}
+
 #cardoferta{
     margin-top: 10px;
     border-color:  #505050 !important;
 }
 
-#newofer{
+#sidebar-derecho{
+    height: 100%;
+    background-color: #BDBDBD;
+    padding-top: 53px;
+    border-color: #505050 !important;
+    width: 11.5%;
+    padding-bottom: 5px;
     float: right;
-    position: fixed;
     top: 0;
     right: 0;
 }
-
 

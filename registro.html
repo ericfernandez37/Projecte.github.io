@@ -16,124 +16,177 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-        <a class="navbar-brand" href="#">MERCAT DE BARCELONA</a>
+
+        <a class="navbar-brand" href="landingpage.html">MERCAT DE BARCELONA</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto topnav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tiendas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn text-white" type="button" href="#" data-toggle="modal" data-target="#myModal" id="botoniniciar">Iniciar sessión</a>                  
-                </li>
-                
-            </ul>
-        </div>
     </nav>
 
     <!--Registro-->
 
-    <div class="card" style="width: 20rem;" >
-      <form>
+    <div id="fondo-mercado">
 
-        <div class="form-group">
+      <div class="container">
 
-          <b><label for="nombre">introduce tu nombre:</label></b>
-          <input type="text" class="form-control" id="name" placeholder="Nombre" name="name" required>
-          <br>
-          <b><label for="email">dirección de correo electronico:</label></b>
-          <input type="email" class="form-control" id="email"placeholder="email" name="email" required>
-      
-          <div class="valid-feedback">valido</div>
-          <div class="invalid-feedback">Por favor introduce un correo valido</div>
-          <br>
-          <b><label for="contrasenya"> introduce una contraseña:</label></b>
-          <input type="password" class="form-control" id="password" placeholder="introduce una contraseña" name="password" required>
-          <br>
-          <b><label for="data" class=" col-form-label">introduce tu año de nacimiento:</label></b>
-            <input class="form-control" type="date" value="" id="dataydias" name="dataydias" required>
-          
-          <br>
-        
-          <button type="submit" class="btn btn-primary">enviar</button>
-          <a href="./landingpage.html">Volver a la pagina de inicio</a>
-
-        </div>
-      </form>
-    </div>
-      </form>
-
-      
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small pt-0 fixed-bottom" id="footer">
-
-    <!-- Call to action -->
+        <div class="card mt-3">
   
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter-square fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1">
-          <i class="fab fa-google-plus fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-github mx-1">
-          <i class="fab fa-github fa-2x"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
+          <div class="card-header">
+  
+            <i class="fas fa-user fa-2x"></i>
+  
+            <label for="txtcrear" class="col-sm2 col-form-label font-weight-bold"><h4>Crear cuenta</h4></label>
+          
+          </div>
+  
+          <div class="card-body">
+  
+            <form action="" method="POST" enctype="multipart/form-data">
+            
+              <div class="form-group row">
+  
+                <label for="Nombre" class="col-sm-4 col-form-label control-label">Introduce tu nombre:</label>
+  
+                <div class="col-sm-8">
+  
+                  <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre"  required>
+  
+                </div>
+  
+              </div>
+  
+              <div class="form-group row">
+  
+                <label for="Email" class="col-sm-4 col-form-label control-label">Introduce tu correo electrónico: </label>
+  
+                <div class="col-sm-8">
+  
+                  <input type="text" class="form-control" name="Email" id="Email" placeholder="ejemplo@ejemplo.com" required>
+  
+                </div>
+  
+              </div>
+  
+              <div class="form-group row">
+  
+                <label for="Contraseña" class="col-sm-4 control-label col-form-label">Introduce tu contraseña: </label>
+  
+                <div class="col-sm-8">
+  
+                  <input type="password" class="form-control" name="Contraseña" id="Contraseña" placeholder="Contraseña" required>
+  
+                </div>
+  
+              </div>
+  
+              <div class="form-group row">
+  
+                <label for="Contraseña" class="col-sm-4 col-form-label control-label">Repetir contraseña: </label>
+  
+                <div class="col-sm-8">
+  
+                  <input type="password" class="form-control" name="Contraseña" id="Contraseña" placeholder="Contraseña" required>
+  
+                </div>
+                
+              </div>
+  
+              <div class="form-group row">
+  
+                <label for="fileImagen" class="col-sm-4 col-form-label">Foto de perfil:</label>
+  
+                <div class="col-sm-8">
+  
+                     <div class="custom-file">
+  
+                         <input type="file" class="custom-file-input" name="fileImagen" id="fileImagen" lang="en" accept=".pdf,.jpg,.png">
+  
+                         <label class="custom-file-label" for="customFileLang">(Opcional)</label>
+  
+                     </div>
+  
+                </div>
+  
+            </div>
+  
+              <button type="submit" class="btn btn-secondary float-right"><a href="landingpage.html">Cancelar</a></button>
+  
+              <button type="submit" class="btn btn-primary float-right" id="botonacep">Aceptar</button>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+  
+<<<<<<< HEAD
+      </div>
+=======
+      </div>  
 
-    <!--
-    <ul class="list-unstyled list-inline text-center py-2">
+    </div>
+      
+   
+
+>>>>>>> aebf6df9239917fe238c210f904bd1cc97c5b652
+
+  <!-- Footer -->
+  <footer class="page-footer font-small pt-0" id="footer">
+
+      <!-- Call to action -->
+    
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
-          <h5 class="mb-1">Registrate gratis!</h5>
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook fa-2x"> </i>
+          </a>
         </li>
         <li class="list-inline-item">
-          <a href="#!" class="btn btn-rounded" id="botonregistr">Registrarse</a>
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter-square fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-github mx-1">
+            <i class="fab fa-github fa-2x"> </i>
+          </a>
         </li>
       </ul>
-      -->
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">Conocenos mas:
-      <a href="https://politecnics.barcelona/">Politecnics</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+      <!-- Social buttons -->
+
+      <!--
+      <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Registrate gratis!</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-rounded" id="botonregistr">Registrarse</a>
+          </li>
+        </ul>
+        -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Conocenos mas:
+        <a href="https://politecnics.barcelona/">Politecnics</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
