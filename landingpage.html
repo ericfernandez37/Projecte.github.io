@@ -8,88 +8,185 @@
         <link rel="stylesheet" href="css/csslanding.css" type="text/css">
     </head>
 
+<!-- web para que te maquete la web con el boostrap mas facil https://www.layoutit.com/cn -->
+
 
   <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom" id="navbar">
+
         <a class="navbar-brand" href="#">MERCAT DE BARCELONA</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto topnav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Tiendas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn text-white" type="button" href="#" data-toggle="modal" data-target="#myModal" id="botoniniciar">Iniciar sessión</a>                  
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn text-white" type="button" href="#" data-toggle="modal" data-target="#myModal" id="botonregistnav">Registrarse</a>
-                </li>
-            </ul>
-        </div>
+
+          <ul class="navbar-nav ml-auto topnav">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tiendas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn text-white" type="button" href="#" data-toggle="modal" data-target="#myModal" id="botoniniciar">Iniciar sessión</a>                  
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn text-white" type="button" href="#" data-toggle="modal" data-target="#myModal" id="botonregistnav">Registrarse</a>
+            </li>
+
+          </ul>
+
+        </div>     
     </nav>
 
 
+
     <div class="d-flex">
-      <div id="sidebar-container">
+
+      <div id="sidebar-container" class="border-right">
+
         <div id="Ofertas1">
+
           <h4>Ofertas destacadas</h4>
+
         </div>
+
         <div id="menu">
-          <div class="card" style="width: 13rem;">
+
+          <div class="card border" style="width: 13rem;" id="cardoferta">
+
             <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
             <div class="card-body">
+
               <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
             </div>
+
           </div>
-          <div class="card" id="cardoferta" style="width: 13rem;">
+        
+          <div class="card border" id="cardoferta" style="width: 13rem;">
+
             <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
             <div class="card-body">
+
               <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
             </div>
+
           </div>
+
+          <div class="card border" id="cardoferta" style="width: 13rem;">
+
+            <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+            <div class="card-body">
+
+              <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
+            </div>
+
+          </div>
+
+          <div class="card border" id="cardoferta" style="width: 13rem;">
+
+            <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+            <div class="card-body">
+
+              <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
+          <div class="" id="newofer">
 
-    </div>
-  
-      <!--
-      <div class="col-lg-8" id="noticias">
-  
-        <div class="noticia1 col-sm-10">
-          <div class="card mb-3" style="max-width: 700px;">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img src="..." class="card-img" alt="...">
+            <div id="sidebar-container" class="border-left">
+
+              <div id="Ofertas2">
+
+                <h4>Nuevas ofertas</h4>
+
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Titulo noticia</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+              <div id="menu">
+
+                <div class="card border" style="width: 13rem;" id="cardoferta">
+
+                  <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+                  <div class="card-body">
+
+                    <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
+                  </div>
+
                 </div>
+
+                <div class="card border" id="cardoferta" style="width: 13rem;">
+
+                  <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+                  <div class="card-body">
+
+                    <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
+                  </div>
+
+                  <div class="card border" id="cardoferta" style="width: 13rem;">
+
+                    <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+                    <div class="card-body">
+
+                      <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
+                    </div>
+
+                  </div>
+
+                  <div class="card border" id="cardoferta" style="width: 13rem;">
+
+                    <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+                    <div class="card-body">
+
+                      <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
-    -->
-  
-  
-      <div class="col-lg-2" id="ofertas2">
-  
-      </div>
+      
     </div>
+
     
 
 
@@ -102,62 +199,48 @@
 
 
 
+    <!-- Footer -->
+    <footer class="font-small pt-4 border-top" id="footer">
 
-
-
-<!-- Footer -->
-<footer class="page-footer font-small pt-4 fixed-bottom" id="footer">
-
-    <!-- Call to action -->
-  
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter-square fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1">
-          <i class="fab fa-google-plus fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-github mx-1">
-          <i class="fab fa-github fa-2x"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
-
-    <!--
-    <ul class="list-unstyled list-inline text-center py-2">
+      <!-- Call to action -->
+    
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
-          <h5 class="mb-1">Registrate gratis!</h5>
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook fa-2x"> </i>
+          </a>
         </li>
         <li class="list-inline-item">
-          <a href="#!" class="btn btn-rounded" id="botonregistr">Registrarse</a>
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter-square fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-github mx-1">
+            <i class="fab fa-github fa-2x"> </i>
+          </a>
         </li>
       </ul>
-      -->
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">Conocenos mas:
-      <a href="https://politecnics.barcelona/">Politecnics</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+      <!-- Social buttons -->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Conocenos mas:
+        <a href="https://politecnics.barcelona/">Politecnics</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
 
 </body>
 
