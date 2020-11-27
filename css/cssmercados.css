@@ -1,6 +1,14 @@
 #mercados{
-    margin-top:20px;
-    margin-left:50px;
-    margin-right: 50px;
+    padding-top:80px;
+    margin-left:80px;
+    margin-right: 400px;
 
+}
+.card-img{
+height: 450px;
+width: absolute;
+opacity: 50%;
+}
+#mercado{
+    margin-bottom: 30px !important;
 }
