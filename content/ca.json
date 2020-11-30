@@ -1,0 +1,10 @@
+{
+    "login": {
+        "pagetitle": "Iniciar Sessió",
+        "title": "Iniciar Sessió",
+        "username": "Nom d'Usuari",
+        "password": "Contrasenya",
+        "noaccount": "Encara no tens un compte?",
+        "register": "Registra't"
+    }
+}

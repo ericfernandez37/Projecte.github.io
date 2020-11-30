@@ -1,0 +1,10 @@
+{
+    "login": {
+        "pagetitle": "Login",
+        "title": "Login",
+        "username": "Username",
+        "password": "Password",
+        "noaccount": "Don't have an account yet?",
+        "register": "Register"
+    }
+}
