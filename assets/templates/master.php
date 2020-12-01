@@ -19,7 +19,7 @@
         $_SESSION['language'] = "en";
     }
 
-    require_once 'Terceros/ti/ti.php';
+    require_once 'assets/libraries/ti/ti.php';
 ?>
 
 <!DOCTYPE html>
@@ -34,13 +34,16 @@
         <!-- Title -->
         <title><?php startblock('titulo')?><?php endblock() ?></title>
         <!-- Fonts and Icons -->
-        <link rel="stylesheet" type="text/css" href="Terceros/Font-awesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="assets/libraries/Font-awesome/css/all.css">
         <!-- CSS -->
-        <link rel="stylesheet" href="css/micss.css">
+        <link rel="stylesheet" href="assets/css/micss.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/csslanding.css">
+        <link rel="stylesheet" href="assets/css/csslanding.css">
         <?php startblock('ownCSS')?><?php endblock() ?>
         <!-- Scripts -->
+        <script src="/assets/libraries/jquery/jquery.min.js"></script>
+        <script src="/assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <?php startblock('ownJS_header')?><?php endblock() ?>
     </head>
     <body>
