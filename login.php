@@ -17,19 +17,11 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-if (isset($_POST['lang'])) {
-    $_SESSION['language'] = $_POST['lang'];
-} else if (!isset($_SESSION['language'])) {
-    $_SESSION['language'] = "en";
-}
-
 if (isset($_SESSION['identificador'])) {
     $identificador = $_SESSION['identificador'];
 } else {
     $identificador = "";
 }
-// ToDo Borrar cuando se pueda cambiar de idioma. Está así para probar los idiomas.
-$_SESSION['language'] = "en";
 
 $contentFile = "assets/content/" . $_SESSION['language'] . ".json";
 $contentJson = file_get_contents($contentFile);
