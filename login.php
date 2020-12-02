@@ -23,9 +23,6 @@ if (isset($_SESSION['identificador'])) {
     $identificador = "";
 }
 
-$contentFile = "assets/content/" . $_SESSION['language'] . ".json";
-$contentJson = file_get_contents($contentFile);
-$content = json_decode($contentJson, true);
 ?>
 
 <?php startblock('titulo') ?><?php echo $content["login"]["pagetitle"]; ?><?php endblock() ?>

@@ -22,7 +22,14 @@ if (isset($_POST['lang'])) {
     $_SESSION['language'] = $DEFAULT_LANG;
 }
 
+$_SESSION['language']= "ca";
+
 require_once 'assets/libraries/ti/ti.php';
+
+
+$contentFile = "assets/content/" . $_SESSION['language'] . ".json";
+$contentJson = file_get_contents($contentFile);
+$content = json_decode($contentJson, true);
 ?>
 
 <!DOCTYPE html>
@@ -61,13 +68,12 @@ require_once 'assets/libraries/ti/ti.php';
                 <!-- Selección de idioma -->
             <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user fa-1x"></i>
+                    <i class="fas fa-globe"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Log in</a>
-                        <a class="dropdown-item" href="#">Register</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["spanish"]; ?></a>    <!-- Añadir API IDIOMA -->
+                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["catalan"]; ?></a>    <!-- Añadir API IDIOMA -->
+                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["english"]; ?></a>    <!-- Añadir API IDIOMA -->
                     </div>
                 </li>
                 <!-- Login/Register/Logout -->
@@ -76,10 +82,10 @@ require_once 'assets/libraries/ti/ti.php';
                         <i class="fas fa-user fa-1x"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Log in</a>
-                        <a class="dropdown-item" href="#">Register</a>
+                        <a class="dropdown-item" href="login.php"><?php echo $content["navbar"]["login"]; ?></a>
+                        <a class="dropdown-item" href="registro.html"><?php echo $content["navbar"]["register"]; ?></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Log out</a>
+                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["logout"]; ?></a>
                     </div>
                 </li>
             </ul>
