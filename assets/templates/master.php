@@ -22,7 +22,6 @@ if (isset($_POST['lang'])) {
     $_SESSION['language'] = $DEFAULT_LANG;
 }
 
-$_SESSION['language']= "ca";
 
 require_once 'assets/libraries/ti/ti.php';
 
@@ -66,14 +65,23 @@ $content = json_decode($contentJson, true);
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <!-- Selección de idioma -->
-            <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-globe"></i>
+                        <i class="fas fa-globe"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["spanish"]; ?></a>    <!-- Añadir API IDIOMA -->
-                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["catalan"]; ?></a>    <!-- Añadir API IDIOMA -->
-                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["english"]; ?></a>    <!-- Añadir API IDIOMA -->
+                        <form action="<?php echo $currentPage ?>" method="post">
+                            <input type="hidden" name="lang" value="es" />
+                            <button type="submit" class="dropdown-item">Castellano</button>
+                        </form>
+                        <form action="<?php echo $currentPage ?>" method="post">
+                            <input type="hidden" name="lang" value="ca" />
+                            <button type="submit" class="dropdown-item">Català</button>
+                        </form>
+                        <form action="<?php echo $currentPage ?>" method="post">
+                            <input type="hidden" name="lang" value="en" />
+                            <button type="submit" class="dropdown-item">English</button>
+                        </form>
                     </div>
                 </li>
                 <!-- Login/Register/Logout -->
@@ -82,10 +90,12 @@ $content = json_decode($contentJson, true);
                         <i class="fas fa-user fa-1x"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="login.php"><?php echo $content["navbar"]["login"]; ?></a>
-                        <a class="dropdown-item" href="registro.html"><?php echo $content["navbar"]["register"]; ?></a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><?php echo $content["navbar"]["logout"]; ?></a>
+                        <?php if (isset($_SESSION['identificador'])) { ?>
+                            <a class="dropdown-item" href="login.php"><?php echo $content["navbar"]["login"]; ?></a>
+                            <a class="dropdown-item" href="registro.html"><?php echo $content["navbar"]["register"]; ?></a>
+                        <?php } else { ?>
+                            <a class="dropdown-item" href="#"><?php echo $content["navbar"]["logout"]; ?></a>
+                        <?php } ?>
                     </div>
                 </li>
             </ul>
