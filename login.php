@@ -8,6 +8,8 @@
  * Fecha: -
  */
 
+include_once "assets/templates/master.php";
+
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
@@ -21,19 +23,13 @@ if (isset($_POST['lang'])) {
     $_SESSION['language'] = "en";
 }
 
-if (isset($_POST['identificador'])) {
-    $_SESSION['identificador'] = $_POST['identificador'];
-} else if (!isset($_SESSION['identificador'])) {
-    $_SESSION['identificador'] = "";
+if (isset($_SESSION['identificador'])) {
+    $identificador = $_SESSION['identificador'];
+} else {
+    $identificador = "";
 }
 // ToDo Borrar cuando se pueda cambiar de idioma. Está así para probar los idiomas.
 $_SESSION['language'] = "en";
-
-$error = $_SESSION['error'];
-$identificador = $_SESSION['identificador'];
-
-include_once "assets/templates/master.php";
-
 
 $contentFile = "assets/content/" . $_SESSION['language'] . ".json";
 $contentJson = file_get_contents($contentFile);
