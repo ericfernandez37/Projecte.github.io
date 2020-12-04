@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "spanish": "Español",
+        "catalan": "Catalán",
+        "english": "Inglés",
+        "login": "Iniciar sesión",
+        "register": "Registrarse",
+        "logout": "Cerrar sesión"
+    },
+    "login": {
+        "pagetitle": "Iniciar Sesión",
+        "title": "Iniciar Sesión",
+        "username": "Nombre de usuario",
+        "password": "Contraseña",
+        "noaccount": "Aún no tienes una cuenta?",
+        "register": "Regístrate"
+    },
+    "register": {
+        "pagetitle": "Registro",
+        "title": "Registro"
+    }
+}

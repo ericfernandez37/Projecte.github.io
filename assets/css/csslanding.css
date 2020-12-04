@@ -1,9 +1,8 @@
 #sidebar-izquierdo{
-    height: 100%;
+    
     background-color: #BDBDBD;
     padding-top: 53px;
     border-color: #505050 !important;
-    width: 11.5%;
     padding-bottom: 5px;
 }
 
@@ -12,16 +11,11 @@
     color: #ffffff;
 }
 
-#Ofertas2{
-    margin-left: 5px;
-    color: #ffffff;
+#row{
+    width: 100%;
 }
 
 #menu{
-    margin: 5px;
-}
-
-#menu2{
     margin: 5px;
 }
 
@@ -35,10 +29,7 @@
     background-color: #BDBDBD;
     padding-top: 53px;
     border-color: #505050 !important;
-    width: 11.5%;
     padding-bottom: 5px;
     float: right;
-    top: 0;
-    right: 0;
 }
 

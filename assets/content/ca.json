@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "spanish": "Castellà",
+        "catalan": "Català",
+        "english": "Anglès",
+        "login": "Iniciar sessió",
+        "register": "Registrar-se",
+        "logout": "Tancar sessió"
+    },
+    "login": {
+        "pagetitle": "Iniciar Sessió",
+        "title": "Iniciar Sessió",
+        "username": "Nom d'usuari",
+        "password": "Contrasenya",
+        "noaccount": "Encara no tens un compte?",
+        "register": "Registra't"
+    },
+    "register": {
+        "pagetitle": "Registre",
+        "title": "Registre"
+    }
+}
