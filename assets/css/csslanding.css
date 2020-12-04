@@ -1,9 +1,9 @@
 #sidebar-izquierdo{
-    
     background-color: #BDBDBD;
     padding-top: 53px;
     border-color: #505050 !important;
     padding-bottom: 5px;
+   
 }
 
 #Ofertas1{
@@ -11,17 +11,18 @@
     color: #ffffff;
 }
 
-#row{
+.row{
     width: 100%;
 }
 
 #menu{
-    margin: 5px;
+    margin: 15px;
 }
 
 #cardoferta{
     margin-top: 10px;
     border-color:  #505050 !important;
+    width: 200px;
 }
 
 #sidebar-derecho{
