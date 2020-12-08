@@ -28,6 +28,10 @@
     position: fixed;
     position: relative;
   }
+
+  .parrafo{
+    color: white;
+  }
   
   
 #imagenfondo{
@@ -43,3 +47,7 @@ margin: 0 auto;
 
 }
 
+.movil{
+  width: 800px;
+  height: 230px;
+}
