@@ -16,13 +16,13 @@
     height: 50px;
     position: absolute;
     margin: 0px;
-    left: 500px;
+    right : 560px;
     top: 520px;
 }
 
 #paso1{
     background-color: palevioletred;
-    width: 1137px;
+    width: 75px;
     height: 75px;
     position: absolute;
     top: 430px;
@@ -31,7 +31,7 @@
 
 #paso2{
     background-color: purple;
-    width: 1137px;
+    width: 75px;
     height: 75px;
     position: absolute;
     top: 350px;
@@ -40,7 +40,7 @@
 
 #paso3{
     background-color: sienna;
-    width: 1137px;
+    width: 75px;
     height: 75px;
     position: absolute;
     right: 0px;
@@ -49,7 +49,7 @@
 
 #paso4{
     background-color: #009BFF;
-    width: 1137px;
+    width: 75px;
     height: 75px;
     position: absolute;
     right: 0px;
@@ -58,7 +58,7 @@
 
 #paso5{
     background-color:#1dd827;
-    width: 1137px;
+    width: 75px;
     height: 75px;
     position: absolute;
     right: 0px;
@@ -68,7 +68,7 @@
 #final{
     background-color: silver;
     position: absolute;
-    left: 500px;
+    right: 560px;
     width: 80px;
     height: 60px;
     top: 5px;
