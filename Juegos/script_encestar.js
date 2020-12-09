@@ -1,24 +1,49 @@
-document.onkeydown  = pulsaTecla;
-document.onkeyup    = soltarTecla;
-document.onkeypress = mantenerTecla;
+var izquierda = 37;
+var derecha = 39;
+var arriba = 38;
+var abajo = 40;
 
-var fondo   = $('#fondojuego');
-var jugador = $('#jugador');
-var w       = fondo.width() - jugador.width();
-var d       = {};
-var x       = 3;
+document.addEventListener('keydown', function(event){
+    if (event.keyCode == izquierda){
+        moverizquierda();
+    }
 
-function nuevapos(v, a, b){
-    var n = parseInt(v, 10) - (d[a] ? x : 0) + (d[b] ? x : 0);
-    return n < 0 ? 0 : n > w ? w : n;
+    else if (event.keyCode == derecha){
+        moverderecha();
+    }
+
+    else if (event.keyCode == arriba){
+        moverarriba();
+    }
+
+    else if (event.keyCode == abajo){
+        moverabajo();
+    }
+});
+
+var fondo   = document.querySelector('#fondojuego');
+var jugador = document.getElementById("jugador");
+var velocidad = 50;
+var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+var Right = parseInt(window.getComputedStyle(jugador).getPropertyValue("right"));
+
+
+function moverderecha(){
+    Right -= velocidad;
+    jugador.style.right = Right + "px";
 }
 
-$(window).keydown(function(e) { d[e.which] = true; });
-$(window).keyup(function(e) { d[e.which] = false; });
+function moverizquierda(){
+    Right += velocidad;
+    jugador.style.right = Right + "px";
+}
 
-setInterval(function(){
-    jugador.css({
-        left: function(i,v) {return nuevapos(v, 37, 39); },
-        top:  function(i,v) {return nuevapos(v, 38, 40); }
-    });
-}, 20);
+function moverarriba(){
+    Top -= velocidad;
+    jugador.style.left = Top + "px";
+}
+
+function moverabajo(){
+    Top += velocidad;
+    jugador.style.top = Top +"px";
+}
