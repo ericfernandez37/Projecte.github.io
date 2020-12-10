@@ -12,63 +12,63 @@
 
 #jugador{
     background-color: orangered;
-    width: 75px;
-    height: 50px;
+    width: 50px;
+    height: 40px;
     position: absolute;
     margin: 0px;
-    right : 560px;
+    left : 510px;
     top: 520px;
 }
 
 #paso1{
     background-color: palevioletred;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 40px;
     position: absolute;
     top: 430px;
-    right: 0px;
+    left: 0px;
 }
 
 #paso2{
     background-color: purple;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 40px;
     position: absolute;
     top: 350px;
-    right: 0px;
+    left: 0px;
 }
 
 #paso3{
     background-color: sienna;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 40px;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 270px;
 }
 
 #paso4{
     background-color: #009BFF;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 40px;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 190px;
 }
 
 #paso5{
     background-color:#1dd827;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 40px;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 110px;
 }
 
 #final{
     background-color: silver;
     position: absolute;
-    right: 560px;
+    left: 495px;
     width: 80px;
     height: 60px;
     top: 5px;
