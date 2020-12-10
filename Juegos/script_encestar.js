@@ -139,6 +139,10 @@ setInterval(function(){
    //Metodo detencion de colisiones 
     var colisiones = setInterval(function(){
 
+
+            var left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
+            var top = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+
             //igualamos las variables de anchura y altura
             jugadorw = jugador.offsetWidth;
             jugadorh = jugador.offsetHeight;
@@ -173,7 +177,11 @@ setInterval(function(){
 
             //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
             if((jugadorx + jugadorw) > obstaculo1x && jugadorx < (obstaculo1x + obstaculo1w) && (jugadory + jugadorh) > obstaculo1y && jugadory < (obstaculo1y + obstaculo1h)){
+                
+                jugador.style.left = left + "px";
+                jugador.style.top = top + "px";
                 alert("Has perdido");
+                
             }
 
             if((jugadorx + jugadorw) > obstaculo2x && jugadorx < (obstaculo2x + obstaculo2w) && (jugadory + jugadorh) > obstaculo2y && jugadory < (obstaculo2y + obstaculo2h)){
