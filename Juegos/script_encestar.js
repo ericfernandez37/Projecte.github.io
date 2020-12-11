@@ -1,0 +1,355 @@
+window.onload = function(){
+var juego = false;
+var aumentarvelocidad = 1;
+var fondo = document.getElementById("fondojuego");
+var izquierda = 37;
+var derecha = 39;
+var arriba = 38;
+var abajo = 40;
+var jugador = document.getElementById("jugador");
+var comida = document.getElementById("final");
+var boton = document.getElementById("empezar");
+var puntuacio = document.getElementById("puntuacio");
+puntuacio = 0;
+//Variables para poder hacer el detector de colisiones
+var jugadorw, jugadorh, jugadorx, jugadory;
+var comidaw, comidah, comidax, comiday;
+var obstaculo1w, obstaculo1h, obstaculo1x, obstaculo1y;
+var obstaculo2w, obstaculo2h, obstaculo2x, obstaculo2y;
+var obstaculo3w, obstaculo3h, obstaculo3x, obstaculo3y;
+var obstaculo4w, obstaculo4h, obstaculo4x, obstaculo4y;
+//Velocidades en las que se mueven los div
+var velocidad = 35;
+var velocidadlenta = 1;
+var velocidadmedia = 2;
+var velocidadalta = 3;
+//Variables obstaculos
+var obstaculo1 = document.getElementById("paso1");
+var obstaculo2 = document.getElementById("paso2");
+var obstaculo3 = document.getElementById("paso3");
+var obstaculo4 = document.getElementById("paso4");
+var obstaculo5 = document.getElementById("paso5");
+
+
+var posizquierda = true;
+var posderecha = true;
+var contador = 60;
+
+document.addEventListener('keydown', function(event){
+
+    if (event.keyCode == derecha){
+        var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
+        if (Left < 1060){
+            var nuevapos = Left + velocidad;
+            jugador.style.left = nuevapos + "px";
+        }
+    }
+
+    if (event.keyCode == izquierda){
+        var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
+        if (Left > 20){
+            var nuevapos = Left - velocidad;
+            jugador.style.left = nuevapos + "px";
+        }
+    }
+
+    if (event.keyCode == abajo){
+        var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+        if (Top < 500){
+            var nuevapos = Top + velocidad;
+            jugador.style.top = nuevapos + "px";
+        }
+    }
+
+    if (event.keyCode == arriba){
+        var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+        if (Top > 20){
+            var nuevapos = Top - velocidad;
+            jugador.style.top = nuevapos + "px";
+        }
+    }
+
+});
+
+//funcion para mover los obstaculos por pantalla
+setInterval(function(){
+    if(juego == true){
+
+        //Parseamos los valores de obstaculo
+        var obstaculo1iz = parseInt(window.getComputedStyle(obstaculo1).getPropertyValue("left"));
+        var obstaculo2iz = parseInt(window.getComputedStyle(obstaculo2).getPropertyValue("left"));
+        var obstaculo3iz = parseInt(window.getComputedStyle(obstaculo3).getPropertyValue("left"));
+        var obstaculo4iz = parseInt(window.getComputedStyle(obstaculo4).getPropertyValue("left"));
+        var obstaculo5iz = parseInt(window.getComputedStyle(obstaculo5).getPropertyValue("left"));
+
+        //Declaramos bloques para que se muevan por la pantalla
+        if(obstaculo1.dataset.izquierda == "true"){
+            if (obstaculo1iz < 1050){
+                var nuevaposobst1 = obstaculo1iz + velocidadmedia;
+                obstaculo1.style.left = nuevaposobst1 + "px";
+            }
+            else{
+                obstaculo1.dataset.izquierda = false;   
+            }
+           
+        }else if(obstaculo1.dataset.izquierda == "false"){
+            if (obstaculo1iz > 10){
+                var nuevaposobst1 = obstaculo1iz - velocidadmedia;
+                obstaculo1.style.left = nuevaposobst1 + "px";
+            }else{
+                obstaculo1.dataset.izquierda = true;
+            }
+        }
+
+        if(obstaculo2.dataset.izquierda == "true"){
+            if (obstaculo2iz < 1050){
+                var nuevaposobst2 = obstaculo2iz + velocidadalta;
+                obstaculo2.style.left = nuevaposobst2 + "px";
+            }else{
+                obstaculo2.dataset.izquierda = false;   
+            }
+           
+        }else if(obstaculo2.dataset.izquierda == "false"){
+            if (obstaculo2iz > 10){
+                var nuevaposobst2 = obstaculo2iz - velocidadalta;
+                obstaculo2.style.left = nuevaposobst2 + "px";
+            }else{
+                obstaculo2.dataset.izquierda = true;
+            }
+        }
+
+        if(obstaculo3.dataset.izquierda == "true"){
+            if (obstaculo3iz < 1050){
+                var nuevaposobst3 = obstaculo3iz + velocidadlenta;
+                obstaculo3.style.left = nuevaposobst3 + "px";
+            }
+            else{
+                obstaculo3.dataset.izquierda = false;   
+            }
+           
+        }else if(obstaculo3.dataset.izquierda == "false"){
+            if (obstaculo3iz > 10){
+                var nuevaposobst3 = obstaculo3iz - velocidadlenta;
+                obstaculo3.style.left = nuevaposobst3 + "px";
+            }else{
+                obstaculo3.dataset.izquierda = true;
+            }
+        }
+
+        if(obstaculo4.dataset.izquierda == "true"){
+            if (obstaculo4iz < 1050){
+                var nuevaposobst4 = obstaculo4iz + velocidadmedia;
+                obstaculo4.style.left = nuevaposobst4 + "px";
+            }
+            else{
+                obstaculo4.dataset.izquierda = false;   
+            }
+           
+        }else if(obstaculo4.dataset.izquierda == "false"){
+            if (obstaculo4iz > 10){
+                var nuevaposobst4 = obstaculo4iz - velocidadmedia;
+                obstaculo4.style.left = nuevaposobst4 + "px";
+            }else{
+                obstaculo4.dataset.izquierda = true;
+            }
+        }
+
+        if(obstaculo5.dataset.izquierda == "true"){
+            if (obstaculo5iz < 1050){
+                var nuevaposobst5 = obstaculo5iz + velocidadlenta;
+                obstaculo5.style.left = nuevaposobst5 + "px";
+            }
+            else{
+                obstaculo5.dataset.izquierda = false;   
+            }
+           
+        }else if(obstaculo5.dataset.izquierda == "false"){
+            if (obstaculo5iz > 10){
+                var nuevaposobst5 = obstaculo5iz - velocidadlenta;
+                obstaculo5.style.left = nuevaposobst5 + "px";
+            }else{
+                obstaculo5.dataset.izquierda = true;
+            }
+        }
+
+    }
+    }, 10)
+
+   //Metodo detencion de colisiones 
+    setInterval(function(){
+
+
+            var left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
+            var top = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+
+            //igualamos las variables de anchura y altura
+            jugadorw = jugador.offsetWidth;
+            jugadorh = jugador.offsetHeight;
+            jugadorx = jugador.offsetLeft;
+            jugadory = jugador.offsetTop;
+
+            obstaculo1w = obstaculo1.offsetWidth;
+            obstaculo1h = obstaculo1.offsetHeight;
+            obstaculo1x = obstaculo1.offsetLeft;
+            obstaculo1y = obstaculo1.offsetTop;
+
+            obstaculo2w = obstaculo2.offsetWidth;
+            obstaculo2h = obstaculo2.offsetHeight;
+            obstaculo2x = obstaculo2.offsetLeft;
+            obstaculo2y = obstaculo2.offsetTop;
+
+            obstaculo3w = obstaculo3.offsetWidth;
+            obstaculo3h = obstaculo3.offsetHeight;
+            obstaculo3x = obstaculo3.offsetLeft;
+            obstaculo3y = obstaculo3.offsetTop;
+
+            obstaculo4w = obstaculo4.offsetWidth;
+            obstaculo4h = obstaculo4.offsetHeight;
+            obstaculo4x = obstaculo4.offsetLeft;
+            obstaculo4y = obstaculo4.offsetTop;
+
+            obstaculo5w = obstaculo5.offsetWidth;
+            obstaculo5h = obstaculo5.offsetHeight;
+            obstaculo5x = obstaculo5.offsetLeft;
+            obstaculo5y = obstaculo5.offsetTop;
+
+
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            if((jugadorx + jugadorw) > obstaculo1x && jugadorx < (obstaculo1x + obstaculo1w) && (jugadory + jugadorh) > obstaculo1y && jugadory < (obstaculo1y + obstaculo1h)){
+
+                //Devolvemos el jugador a la posicion incial
+                jugador.style.left = 510 + "px";
+                jugador.style.top = 520 + "px";
+                
+            }
+
+            
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            if((jugadorx + jugadorw) > obstaculo2x && jugadorx < (obstaculo2x + obstaculo2w) && (jugadory + jugadorh) > obstaculo2y && jugadory < (obstaculo2y + obstaculo2h)){
+                
+                //Devolvemos el jugador a la posicion incial
+                jugador.style.left = 510 + "px";
+                jugador.style.top = 520 + "px";
+                
+            }
+            
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            if((jugadorx + jugadorw) > obstaculo3x && jugadorx < (obstaculo3x + obstaculo3w) && (jugadory + jugadorh) > obstaculo3y && jugadory < (obstaculo3y + obstaculo3h)){
+                
+                //Devolvemos el jugador a la posicion incial
+                jugador.style.left = 510 + "px";
+                jugador.style.top = 520 + "px";
+              
+            }
+
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            if((jugadorx + jugadorw) > obstaculo4x && jugadorx < (obstaculo4x + obstaculo4w) && (jugadory + jugadorh) > obstaculo4y && jugadory < (obstaculo4y + obstaculo4h)){
+                
+                //Devolvemos el jugador a la posicion incial
+                jugador.style.left = 510 + "px";
+                jugador.style.top = 520 + "px";
+               
+            }
+
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            if((jugadorx + jugadorw) > obstaculo5x && jugadorx < (obstaculo5x + obstaculo5w) && (jugadory + jugadorh) > obstaculo5y && jugadory < (obstaculo5y + obstaculo5h)){
+                
+                //Devolvemos el jugador a la posicion incial
+                jugador.style.left = 510 + "px";
+                jugador.style.top = 520 + "px";
+                
+            }
+    });
+
+    recoger = setInterval(function(){
+
+            jugadorw = jugador.offsetWidth;
+            jugadorh = jugador.offsetHeight;
+            jugadorx = jugador.offsetLeft;
+            jugadory = jugador.offsetTop;
+
+            comidaw = comida.offsetWidth;
+            comidah = comida.offsetHeight;
+            comidax = comida.offsetLeft;
+            comiday = comida.offsetTop;
+
+            //Comprobamos la colision del jugador con la cesta de la comida
+            if((jugadorx + jugadorw) > comidax && jugadorx < (comidax + comidaw) && (jugadory + jugadorh) > comiday 
+            && jugadory < (comiday + comidah)){
+
+                //Aumentamos la velocidad de los obstaculos cada vez que el jugador llegue a la cesta de comida
+                velocidadlenta = velocidadlenta + 1 * aumentarvelocidad;
+                velocidadmedia = velocidadmedia + 1 * aumentarvelocidad;
+                velocidadalta = velocidadalta + 1 * aumentarvelocidad;
+
+                //Devolvemos el jugador a su posicion inicial
+                if (parseInt(comida.style.top) == 520){
+                    comida.style.top = 0 + "px";
+                    comida.style.left = 420 + "px";
+                }
+                //comida.style.left = 510 + "px";
+                else{
+                    comida.style.top = 520 + "px";
+                    comida.style.left = 420 + "px";
+                }
+                
+                aumentarvelocidad++;
+                aumentarpuntos();
+
+                //Comprobamos que ha conseguido toda la comida y mostramos pantalla del final de juego
+                if (aumentarvelocidad > 4){
+                    final();
+                }
+                    
+            }
+    });
+
+    //Creamos el contador para que el jugador tenga 1 minuto de tiempo
+    var tiempojuego = setInterval(function(){
+        document.getElementById("contador").innerHTML = "<p>Tiempo <br>" + contador + "</p>";
+        if(juego == true){
+            contador = contador - 1;
+            if (contador < 0){
+                final();
+                clearInterval(tiempojuego);
+            }
+        }else{
+            juego = false;
+        }
+        
+    }, 1000);
+
+    function aumentarpuntos(){
+        if (aumentarvelocidad <= 5){
+            puntuacio += 150;
+            document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br>" + puntuacio + "</p>";
+        }
+    }
+
+
+    function final(){
+            if (contador <= 0){
+            swal("Juego finalizado, el tiempo ha terminado!");
+            }        
+            else if(aumentarvelocidad >= 4){
+                swal("Compra completada, puntos: " + puntuacio);
+            }
+            obstaculo1.style.left = 0 + "px";
+            obstaculo2.style.left = 0 + "px";
+            obstaculo3.style.left = 0 + "px";
+            obstaculo4.style.left = 0 + "px";
+            obstaculo5.style.left = 0 + "px";
+            jugador.style.left = 510 + "px";
+            jugador.style.top = 520 + "px";
+            juego = false;
+        
+    }
+
+    boton.addEventListener("click", function(){
+        juego= true;
+        boton.style.visibility = "hidden";
+    })
+
+
+}
+

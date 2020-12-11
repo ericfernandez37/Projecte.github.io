@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/micss.css" type="text/css">
     <link rel="stylesheet" href="styles/cssencestar.css" type="text/css">
     <script src="script_encestar.js" language="javascript" type="text/javascript"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Encesta</title>
 
 </head>
@@ -40,12 +41,16 @@
     
     <div id="fondojuego" class="container border">
         
-        <div id="mesa"></div>
-        <div id="objeto1"></div>
-        <div id="objeto2"></div>
-        <div id="objeto3"></div>
-        <div id="objeto4"></div>
-        <div id="cesta"></div>
+        <div id="jugador"></div>
+        <div id="paso1" data-izquierda="true"></div>
+        <div id="paso2" data-izquierda="true"></div>
+        <div id="paso3" data-izquierda="true"></div>
+        <div id="paso4" data-izquierda="true"></div>
+        <div id="paso5" data-izquierda="true"></div>
+        <div id="final"></div>
+        <div id="contador" class="border 1px"></div>
+        <div id="puntuacio" class="border 1px"></div>
+        <button type="button" id="empezar" class="border 1px">Empezar</button>
     </div>
 
 
