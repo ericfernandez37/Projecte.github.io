@@ -1,4 +1,4 @@
-/* The sidebar menu */
+* The sidebar menu */
 .sidenav {
     height: 87%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
@@ -28,26 +28,12 @@
     position: fixed;
     position: relative;
   }
-
-  .parrafo{
-    color: white;
-  }
   
-  
-#imagenfondo{
-
-display: block;
-margin: 0 auto;
-
+#entorno {
+    display: block;
+    margin: 0 auto;
 }
 
 #fondo{
-    opacity: 0.5;
-
-
-}
-
-.movil{
-  width: 800px;
-  height: 230px;
+    opacity: 0.3;
 }
