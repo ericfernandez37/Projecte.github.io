@@ -110,3 +110,15 @@
     background-color: gold;
 }
 
+#reiniciar{
+    background-image: url("../img/reinicio.jpg");
+    background-size: cover;
+    background-position: center;
+    border-color: goldenrod !important;
+    position: absolute;
+    left: 489px;
+    height: 80px;
+    width: 80px;
+    top: 270px;
+    border-radius: 30px 30px;
+}

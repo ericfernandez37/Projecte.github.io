@@ -9,6 +9,7 @@ var abajo = 40;
 var jugador = document.getElementById("jugador");
 var comida = document.getElementById("final");
 var boton = document.getElementById("empezar");
+var reiniciar = document.getElementById("reiniciar");
 var puntuacio = document.getElementById("puntuacio");
 document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br> </p>";
 puntuacio = 0;
@@ -34,7 +35,9 @@ var obstaculo5 = document.getElementById("paso5");
 
 var posizquierda = true;
 var posderecha = true;
-var contador = 10;
+var contador = 15;
+
+reiniciar.style.visibility = "hidden";
 
 document.addEventListener('keydown', function(event){
 
@@ -355,17 +358,16 @@ setInterval(function(){
 
     function aumentarpuntos(){
        
-        if (aumentarvelocidad <= 5){
+        if (aumentarvelocidad < 5){
             puntuacio += 150;
-            //document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br>" + puntuacio + "</p>";
+            document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br>" + puntuacio + "</p>";
         }
-        document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br>" + puntuacio + "</p>";
     }
 
 
     function final(){
             if (contador <= 0){
-            swal("Juego finalizado, el tiempo ha terminado!" + (puntuacio - 150));
+            swal("Juego finalizado, el tiempo ha terminado!" + " Puntuación: " + puntuacio);
             }        
             else if(aumentarvelocidad >= 4){
                 swal("Compra completada, puntos: " + puntuacio);
@@ -378,14 +380,19 @@ setInterval(function(){
             jugador.style.left = 510 + "px";
             jugador.style.top = 520 + "px";
             juego = false;
+            reiniciar.style.visibility = "visible";
         
     }
 
     boton.addEventListener("click", function(){
-        juego= true;
+        juego = true;
         boton.style.visibility = "hidden";
     })
 
+    reiniciar.addEventListener ("click", function(){
+        juego = true
+        reiniciar.style.visibility = "hidden";
+    })
 
 }
 
