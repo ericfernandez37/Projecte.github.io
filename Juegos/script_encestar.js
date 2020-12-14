@@ -9,7 +9,9 @@ var abajo = 40;
 var jugador = document.getElementById("jugador");
 var comida = document.getElementById("final");
 var boton = document.getElementById("empezar");
+var reiniciar = document.getElementById("reiniciar");
 var puntuacio = document.getElementById("puntuacio");
+document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br> </p>";
 puntuacio = 0;
 //Variables para poder hacer el detector de colisiones
 var jugadorw, jugadorh, jugadorx, jugadory;
@@ -33,7 +35,9 @@ var obstaculo5 = document.getElementById("paso5");
 
 var posizquierda = true;
 var posderecha = true;
-var contador = 60;
+var contador = 15;
+
+reiniciar.style.visibility = "hidden";
 
 document.addEventListener('keydown', function(event){
 
@@ -179,8 +183,7 @@ setInterval(function(){
     setInterval(function(){
 
 
-            var left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
-            var top = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
+            var topcomida = parseInt(window.getComputedStyle(comida).getPropertyValue("top"));
 
             //igualamos las variables de anchura y altura
             jugadorw = jugador.offsetWidth;
@@ -214,53 +217,86 @@ setInterval(function(){
             obstaculo5y = obstaculo5.offsetTop;
 
 
-            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando del obstaculo1
             if((jugadorx + jugadorw) > obstaculo1x && jugadorx < (obstaculo1x + obstaculo1w) && (jugadory + jugadorh) > obstaculo1y && jugadory < (obstaculo1y + obstaculo1h)){
 
-                //Devolvemos el jugador a la posicion incial
-                jugador.style.left = 510 + "px";
-                jugador.style.top = 520 + "px";
+                if(topcomida == 5){
+                    //Devolvemos el jugador a la posicion incial
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 520 + "px";
+                }else{
+                    //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 5 + "px";
+                }
                 
             }
 
             
-            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando del obstaculo2
             if((jugadorx + jugadorw) > obstaculo2x && jugadorx < (obstaculo2x + obstaculo2w) && (jugadory + jugadorh) > obstaculo2y && jugadory < (obstaculo2y + obstaculo2h)){
                 
-                //Devolvemos el jugador a la posicion incial
-                jugador.style.left = 510 + "px";
-                jugador.style.top = 520 + "px";
+                if(topcomida == 5){
+                    //Devolvemos el jugador a la posicion incial
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 520 + "px";
+                }else{
+                    //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 5 + "px";
+                }
+                
                 
             }
             
-            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando del obstaculo3
             if((jugadorx + jugadorw) > obstaculo3x && jugadorx < (obstaculo3x + obstaculo3w) && (jugadory + jugadorh) > obstaculo3y && jugadory < (obstaculo3y + obstaculo3h)){
                 
-                //Devolvemos el jugador a la posicion incial
-                jugador.style.left = 510 + "px";
-                jugador.style.top = 520 + "px";
+                if(topcomida == 5){
+                    //Devolvemos el jugador a la posicion incial
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 520 + "px";
+                }else{
+                    //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 5 + "px";
+                }
               
             }
 
-            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando del obstaculo4
             if((jugadorx + jugadorw) > obstaculo4x && jugadorx < (obstaculo4x + obstaculo4w) && (jugadory + jugadorh) > obstaculo4y && jugadory < (obstaculo4y + obstaculo4h)){
                 
-                //Devolvemos el jugador a la posicion incial
-                jugador.style.left = 510 + "px";
-                jugador.style.top = 520 + "px";
+                if(topcomida == 5){
+                    //Devolvemos el jugador a la posicion incial
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 520 + "px";
+                }else{
+                    //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 5 + "px";
+                }
                
             }
 
-            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando
+            //Comprobamos que la posicion del jugador con las de los obstaculos no se esten tocando del obstaculo5
             if((jugadorx + jugadorw) > obstaculo5x && jugadorx < (obstaculo5x + obstaculo5w) && (jugadory + jugadorh) > obstaculo5y && jugadory < (obstaculo5y + obstaculo5h)){
                 
-                //Devolvemos el jugador a la posicion incial
-                jugador.style.left = 510 + "px";
-                jugador.style.top = 520 + "px";
+                if(topcomida == 5){
+                    //Devolvemos el jugador a la posicion incial
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 520 + "px";
+                }else{
+                    //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
+                    jugador.style.left = 510 + "px";
+                    jugador.style.top = 5 + "px";
+                }
                 
             }
     });
 
+
+    //Funcion para que el jugador pueda recoger la comida de la cesta
     recoger = setInterval(function(){
 
             jugadorw = jugador.offsetWidth;
@@ -284,18 +320,19 @@ setInterval(function(){
 
                 //Devolvemos el jugador a su posicion inicial
                 if (parseInt(comida.style.top) == 520){
-                    comida.style.top = 0 + "px";
-                    comida.style.left = 420 + "px";
+                    comida.style.top = 5 + "px";
+                    comida.style.left = 495 + "px";
+                    aumentarpuntos();
                 }
                 //comida.style.left = 510 + "px";
                 else{
                     comida.style.top = 520 + "px";
-                    comida.style.left = 420 + "px";
+                    comida.style.left = 495 + "px";
+                    aumentarpuntos();
                 }
-                
+                //Incrementamos la velocidad de los obstaculos cuando el jugador colisiona con la cesta
                 aumentarvelocidad++;
-                aumentarpuntos();
-
+                
                 //Comprobamos que ha conseguido toda la comida y mostramos pantalla del final de juego
                 if (aumentarvelocidad > 4){
                     final();
@@ -304,7 +341,7 @@ setInterval(function(){
             }
     });
 
-    //Creamos el contador para que el jugador tenga 1 minuto de tiempo
+    //Creamos el contador para que el jugador tenga 1 minuto de tiempo y para ello repetimos la funcion en un intervalo de 1000ms (1 segundo)
     var tiempojuego = setInterval(function(){
         document.getElementById("contador").innerHTML = "<p>Tiempo <br>" + contador + "</p>";
         if(juego == true){
@@ -320,7 +357,8 @@ setInterval(function(){
     }, 1000);
 
     function aumentarpuntos(){
-        if (aumentarvelocidad <= 5){
+       
+        if (aumentarvelocidad < 5){
             puntuacio += 150;
             document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br>" + puntuacio + "</p>";
         }
@@ -329,7 +367,7 @@ setInterval(function(){
 
     function final(){
             if (contador <= 0){
-            swal("Juego finalizado, el tiempo ha terminado!");
+            swal("Juego finalizado, el tiempo ha terminado!" + " Puntuación: " + puntuacio);
             }        
             else if(aumentarvelocidad >= 4){
                 swal("Compra completada, puntos: " + puntuacio);
@@ -342,14 +380,19 @@ setInterval(function(){
             jugador.style.left = 510 + "px";
             jugador.style.top = 520 + "px";
             juego = false;
+            reiniciar.style.visibility = "visible";
         
     }
 
     boton.addEventListener("click", function(){
-        juego= true;
+        juego = true;
         boton.style.visibility = "hidden";
     })
 
+    reiniciar.addEventListener ("click", function(){
+        juego = true
+        reiniciar.style.visibility = "hidden";
+    })
 
 }
 

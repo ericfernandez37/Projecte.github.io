@@ -76,18 +76,18 @@
 
 #contador{
     left: 1040px;
-    background-color: white;
+    background-color: gold;
     position: absolute;
     width: 100px;
     height: 60px;
     top: 0px;
     color: black;   
     text-align: center;
-    border-color: black !important;
+    border-color: goldenrod !important;
 }
 
 #puntuacio{
-    border-color: black !important;
+    border-color: goldenrod !important;
     left: 0px;
     top: 0px;
     color: black;
@@ -96,7 +96,7 @@
     font-size: cover;
     width: 120px;
     height: 60px;
-    background-color: white;
+    background-color:gold;
 }
 
 #empezar{
@@ -110,3 +110,15 @@
     background-color: gold;
 }
 
+#reiniciar{
+    background-image: url("../img/reinicio.jpg");
+    background-size: cover;
+    background-position: center;
+    border-color: goldenrod !important;
+    position: absolute;
+    left: 489px;
+    height: 80px;
+    width: 80px;
+    top: 270px;
+    border-radius: 30px 30px;
+}
