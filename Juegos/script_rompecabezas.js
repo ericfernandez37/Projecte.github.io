@@ -1,5 +1,20 @@
 
 
+//cronometro
+
+window.onload = updateClock;
+var totalTime = 200;
+function updateClock() {
+document.getElementById('countdown').innerHTML = totalTime;
+if(totalTime==0){
+alert('Se acabo el tiempo');
+}else{
+totalTime-=1;
+setTimeout("updateClock()",1000);
+}
+}
+
+//puzzle
 
 var piezas = document.getElementsByClassName('movil');
 
@@ -91,6 +106,17 @@ function testing() {
 	}
 	if(bien_ubicada == 9){
 		win.play();
+	}
+
+	
+}
+
+
+
+function victoria(){
+	if(piezas == elementSelect*bien_ubicada) {
+		alert("true");
+		document.location.reload();
 	}
 }
 

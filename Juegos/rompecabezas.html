@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/cssrompecabezas.css">
 </head>
 <body>
+  
 
   <!--https://www.jspuzzles.com/puzzle.php?puzzle=2458709&lang=es&size=5&cut=7&scale=6-->
 
@@ -38,21 +39,25 @@
           </ul>
         </div>     
     </nav>
+
+
     
           <div class="sidenav">
-            <a href="#">Tiempo</a>
-            <div class="crono_wrapper">
-              <h2 id='crono'>00:00:00</h2>
-              <input type="button" value="Empezar tiempo" onclick="empezarDetener(this);">
-            </div>
-            <a href="#">puntuación</a>
+            <br><br>
+            <h4> <div class="cuentaregresiva"> Cuenta Regresiva</div></h4>
+            <h2><span id="countdown"></span></h2>
+             <a href="#">puntuación</a>
             <div class="parrafo">
               <p>completa el puzzle para pasar al 
                   siguiente nivel,pulsa empezar en el cronometro 
                   para saber en que tiempo haces el rompecabezas
               </p>
             </div>
+            
+            <a href="../landingpage.html"><img src="Imagenes puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
+            
           </div>
+        
 
 
 
@@ -68,7 +73,12 @@
           <g class="padre" id="7"><image xlink:href="Imagenes puzzle/pieza08.png" class="movil"></g>
           <g class="padre" id="8"><image xlink:href="Imagenes puzzle/pieza09.png" class="movil"></g>
         </svg>
-        <audio id="win" src="https://raw.githubusercontent.com/NestorPlasencia/PikaPuzzle/master/media/win.mp3"></audio>
+
+        <div class="ganador">
+          
+        </div>
+
+        <audio id="win" src="media/victoria.mp3"></audio>
           
         <script type="text/javascript" src="script_rompecabezas.js"></script>
 <!-- Footer -->
