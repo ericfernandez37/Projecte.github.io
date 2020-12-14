@@ -1,33 +1,51 @@
-* The sidebar menu */
-.sidenav {
-    height: 87%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 50px; /* Stay at the top */
-    right: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+body {
+  font-family: "Lato", sans-serif;
+}
 
-  }
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.cuentaregresiva{
+  color: white;
+}
+#countdown{
+  color: white;
   
-  /* el menu de navegacion */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    position: relative;
-  }
-  
-  /* cuando pasas el raton por encima se cambia el color de los links  */
-  .sidenav a:hover {
-    color: #f1f1f1;
-    position: fixed;
-    position: relative;
-  }
+}
+
+.parrafo{
+  color: white;
+  position: relative;
+}
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
   
 #entorno {
     display: block;

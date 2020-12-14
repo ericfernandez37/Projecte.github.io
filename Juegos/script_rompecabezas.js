@@ -1,5 +1,20 @@
 
 
+//cronometro
+
+window.onload = updateClock;
+var totalTime = 400;
+function updateClock() {
+document.getElementById('countdown').innerHTML = totalTime;
+if(totalTime==0){
+alert('Se acabo el tiempo');
+}else{
+totalTime-=1;
+setTimeout("updateClock()",1000);
+}
+}
+
+//puzzle
 
 var piezas = document.getElementsByClassName('movil');
 

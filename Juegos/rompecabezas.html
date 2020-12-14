@@ -41,11 +41,9 @@
     
           <div class="sidenav">
             <a href="#">Tiempo</a>
-            <div class="crono_wrapper">
-              <h2 id='crono'>00:00:00</h2>
-              <input type="button" value="Empezar tiempo" onclick="empezarDetener(this);">
-            </div>
-            <a href="#">puntuación</a>
+            <h4> <div class="cuentaregresiva"> Cuenta Regresiva</div></h4>
+            <h2><span id="countdown"></span></h2>
+             <a href="#">puntuación</a>
             <div class="parrafo">
               <p>completa el puzzle para pasar al 
                   siguiente nivel,pulsa empezar en el cronometro 
@@ -68,6 +66,12 @@
           <g class="padre" id="7"><image xlink:href="Imagenes puzzle/pieza08.png" class="movil"></g>
           <g class="padre" id="8"><image xlink:href="Imagenes puzzle/pieza09.png" class="movil"></g>
         </svg>
+
+        <div class="ganador">
+
+          <h2>Has Ganado</h2>
+        </div>
+
         <audio id="win" src="https://raw.githubusercontent.com/NestorPlasencia/PikaPuzzle/master/media/win.mp3"></audio>
           
         <script type="text/javascript" src="script_rompecabezas.js"></script>
