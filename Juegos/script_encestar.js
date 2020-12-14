@@ -11,7 +11,7 @@ var comida = document.getElementById("final");
 var boton = document.getElementById("empezar");
 var reiniciar = document.getElementById("reiniciar");
 var puntuacio = document.getElementById("puntuacio");
-document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br> </p>";
+document.getElementById("puntuacio").innerHTML = "<p><strong>Puntuación</strong> <br> </p>";
 puntuacio = 0;
 //Variables para poder hacer el detector de colisiones
 var jugadorw, jugadorh, jugadorx, jugadory;
@@ -32,10 +32,7 @@ var obstaculo3 = document.getElementById("paso3");
 var obstaculo4 = document.getElementById("paso4");
 var obstaculo5 = document.getElementById("paso5");
 
-
-var posizquierda = true;
-var posderecha = true;
-var contador = 15;
+var contador = 10;
 
 reiniciar.style.visibility = "hidden";
 
@@ -45,7 +42,7 @@ document.addEventListener('keydown', function(event){
         var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
         if (Left < 1060){
             var nuevapos = Left + velocidad;
-            jugador.style.left = nuevapos + "px";
+            jugador.style.left = nuevapos + "px";  
         }
     }
 
@@ -91,17 +88,46 @@ setInterval(function(){
             if (obstaculo1iz < 1050){
                 var nuevaposobst1 = obstaculo1iz + velocidadmedia;
                 obstaculo1.style.left = nuevaposobst1 + "px";
+            
+                setTimeout(function(){
+                    obstaculo1.style.backgroundImage = "url('img/Personaje1andando1.png')";
+                }, 250);
+
+                setTimeout(function(){
+                    obstaculo1.style.backgroundImage = "url('img/Personaje1andando2.png')";
+        
+                }, 500);
+
+                setTimeout(function(){
+                    obstaculo1.style.backgroundImage = "url('img/Personaje1andando3.png')";
+                }, 800);
+
             }
             else{
-                obstaculo1.dataset.izquierda = false;   
+                obstaculo1.dataset.izquierda = false;  
+                obstaculo1.style.backgroundImage = "url('img/Personaje1izquierda.png')";
             }
            
         }else if(obstaculo1.dataset.izquierda == "false"){
             if (obstaculo1iz > 10){
                 var nuevaposobst1 = obstaculo1iz - velocidadmedia;
                 obstaculo1.style.left = nuevaposobst1 + "px";
+
+                setTimeout(function(){
+                    obstaculo1.style.backgroundImage = "url('img/2Personaje1andando1.png')";
+                }, 250);
+
+                setTimeout(function(){
+                    obstaculo1.style.backgroundImage = "url('img/2Personaje1andando2.png')";
+                }, 500);
+
+                setTimeout(function(){
+                    obstaculo1.style.backgroundImage = "url('img/2Personaje1andando3.png')";
+                }, 800);
+
             }else{
                 obstaculo1.dataset.izquierda = true;
+                obstaculo1.style.backgroundImage = "url('img/Personaje1andando1.png')";
             }
         }
 
@@ -109,16 +135,51 @@ setInterval(function(){
             if (obstaculo2iz < 1050){
                 var nuevaposobst2 = obstaculo2iz + velocidadalta;
                 obstaculo2.style.left = nuevaposobst2 + "px";
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando1.png')";
+                }, 350);
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando2.png')";
+                }, 10);
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando3.png')";
+                }, 550);
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando4.png')";
+                }, 800);
+      
+
             }else{
-                obstaculo2.dataset.izquierda = false;   
+                obstaculo2.dataset.izquierda = false; 
+                obstaculo2.style.backgroundImage = "url('img/2Personaje2andando1.png')";
+                clearTimeout();
             }
            
         }else if(obstaculo2.dataset.izquierda == "false"){
             if (obstaculo2iz > 10){
                 var nuevaposobst2 = obstaculo2iz - velocidadalta;
                 obstaculo2.style.left = nuevaposobst2 + "px";
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/2Personaje2andando1.png')";
+                }, 300);
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/2Personaje2andando2.png')";
+                }, 150);
+
+                setTimeout(function(){
+                    obstaculo2.style.backgroundImage = "url('img/2Personaje2andando3.png')";
+                }, 450);
+
             }else{
                 obstaculo2.dataset.izquierda = true;
+                obstaculo2.style.backgroundImage = "url('img/Personaje2andando1.png')" ;
+                clearTimeout();
             }
         }
 
@@ -144,6 +205,25 @@ setInterval(function(){
             if (obstaculo4iz < 1050){
                 var nuevaposobst4 = obstaculo4iz + velocidadmedia;
                 obstaculo4.style.left = nuevaposobst4 + "px";
+
+
+                setTimeout(function(){
+                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando1.png')";
+                }, 0);
+
+                setTimeout(function(){
+                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando2.png')";
+                }, 500);
+
+                setTimeout(function(){
+                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando3.png')";
+                }, 750);
+
+                setTimeout(function(){
+                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando4.png')";
+                }, 1000);
+
+            
             }
             else{
                 obstaculo4.dataset.izquierda = false;   
@@ -177,7 +257,7 @@ setInterval(function(){
         }
 
     }
-    }, 10)
+    }, 10);
 
    //Metodo detencion de colisiones 
     setInterval(function(){
@@ -318,15 +398,16 @@ setInterval(function(){
                 velocidadmedia = velocidadmedia + 1 * aumentarvelocidad;
                 velocidadalta = velocidadalta + 1 * aumentarvelocidad;
 
-                //Devolvemos el jugador a su posicion inicial
-                if (parseInt(comida.style.top) == 520){
+                //Devolvemos el jugador a su posicion inicial, 
+                if (parseInt(comida.style.top) == 500){
                     comida.style.top = 5 + "px";
                     comida.style.left = 495 + "px";
                     aumentarpuntos();
+
                 }
-                //comida.style.left = 510 + "px";
+            
                 else{
-                    comida.style.top = 520 + "px";
+                    comida.style.top = 500 + "px";
                     comida.style.left = 495 + "px";
                     aumentarpuntos();
                 }
@@ -343,7 +424,7 @@ setInterval(function(){
 
     //Creamos el contador para que el jugador tenga 1 minuto de tiempo y para ello repetimos la funcion en un intervalo de 1000ms (1 segundo)
     var tiempojuego = setInterval(function(){
-        document.getElementById("contador").innerHTML = "<p>Tiempo <br>" + contador + "</p>";
+        document.getElementById("contador").innerHTML = "<p><strong>Tiempo <br>" + contador + "</strong></p>";
         if(juego == true){
             contador = contador - 1;
             if (contador < 0){
@@ -358,9 +439,10 @@ setInterval(function(){
 
     function aumentarpuntos(){
        
-        if (aumentarvelocidad < 5){
+        //Ponemos que el condicional sea igual true para que no se sumen los punto si se acaba el juego
+        if (aumentarvelocidad < 5 && juego == true){
             puntuacio += 150;
-            document.getElementById("puntuacio").innerHTML = "<p>Puntuación <br>" + puntuacio + "</p>";
+            document.getElementById("puntuacio").innerHTML = "<p><strong>Puntuación <br>" + puntuacio + "</strong></p>";
         }
     }
 
@@ -372,6 +454,7 @@ setInterval(function(){
             else if(aumentarvelocidad >= 4){
                 swal("Compra completada, puntos: " + puntuacio);
             }
+            juego = false;
             obstaculo1.style.left = 0 + "px";
             obstaculo2.style.left = 0 + "px";
             obstaculo3.style.left = 0 + "px";
@@ -379,7 +462,6 @@ setInterval(function(){
             obstaculo5.style.left = 0 + "px";
             jugador.style.left = 510 + "px";
             jugador.style.top = 520 + "px";
-            juego = false;
             reiniciar.style.visibility = "visible";
         
     }
@@ -392,6 +474,12 @@ setInterval(function(){
     reiniciar.addEventListener ("click", function(){
         juego = true
         reiniciar.style.visibility = "hidden";
+        aumentarvelocidad = 1;
+        contador = 10;
+        puntuacio = 0;
+        document.getElementById("puntuacio").innerHTML = "<strong><p>Puntuación <br>" + puntuacio + "</p></strong>";
+        document.getElementById("contador").innerHTML = "<strong><p>Tiempo <br>" + contador + "</p></strong>";
+
     })
 
 }
