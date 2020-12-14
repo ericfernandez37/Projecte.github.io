@@ -111,3 +111,12 @@ function testing() {
 	
 }
 
+
+
+function victoria(){
+	if(piezas == elementSelect*bien_ubicada) {
+		alert("true");
+		document.location.reload();
+	}
+}
+
