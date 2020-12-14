@@ -3,7 +3,7 @@
 //cronometro
 
 window.onload = updateClock;
-var totalTime = 400;
+var totalTime = 200;
 function updateClock() {
 document.getElementById('countdown').innerHTML = totalTime;
 if(totalTime==0){
@@ -107,5 +107,7 @@ function testing() {
 	if(bien_ubicada == 9){
 		win.play();
 	}
+
+	
 }
 
