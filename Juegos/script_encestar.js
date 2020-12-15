@@ -446,7 +446,7 @@ setInterval(function(){
         }
     }
 
-
+    //Funcion final 
     function final(){
             if (contador <= 0){
             swal("Juego finalizado, el tiempo ha terminado!" + " Puntuación: " + puntuacio);
