@@ -360,7 +360,7 @@ setInterval(function(){
                 aumentarvelocidad++;
                 
                 //Comprobamos que ha conseguido toda la comida y mostramos pantalla del final de juego
-                if(aumentarvelocidad > 4){
+                if(aumentarvelocidad > 5){
                     final();
                 }
                     
