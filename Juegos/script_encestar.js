@@ -9,7 +9,7 @@ var abajo = 40;
 var jugador = document.getElementById("jugador");
 var comida = document.getElementById("final");
 var boton = document.getElementById("empezar");
-var reiniciar = document.getElementById("reiniciar");
+var reiniciar = document.getElementById("siguiente");
 var puntuacio = document.getElementById("puntuacio");
 document.getElementById("puntuacio").innerHTML = "<p><strong>Puntuación</strong> <br> </p>";
 puntuacio = 0;
@@ -32,17 +32,18 @@ var obstaculo3 = document.getElementById("paso3");
 var obstaculo4 = document.getElementById("paso4");
 var obstaculo5 = document.getElementById("paso5");
 
-var contador = 10;
+var contador = 60;
 
 reiniciar.style.visibility = "hidden";
 
-document.addEventListener('keydown', function(event){
+document.addEventListener('keyup', function(event){
 
     if (event.keyCode == derecha){
         var Left = parseInt(window.getComputedStyle(jugador).getPropertyValue("left"));
         if (Left < 1060){
             var nuevapos = Left + velocidad;
             jugador.style.left = nuevapos + "px";  
+            jugador.style.backgroundImage = "url('img/2jugador.png')";
         }
     }
 
@@ -51,6 +52,7 @@ document.addEventListener('keydown', function(event){
         if (Left > 20){
             var nuevapos = Left - velocidad;
             jugador.style.left = nuevapos + "px";
+            jugador.style.backgroundImage = "url('img/jugador.png')";
         }
     }
 
@@ -59,6 +61,7 @@ document.addEventListener('keydown', function(event){
         if (Top < 500){
             var nuevapos = Top + velocidad;
             jugador.style.top = nuevapos + "px";
+            jugador.style.backgroundImage = "url('img/2jugador.png')";
         }
     }
 
@@ -67,6 +70,7 @@ document.addEventListener('keydown', function(event){
         if (Top > 20){
             var nuevapos = Top - velocidad;
             jugador.style.top = nuevapos + "px";
+            jugador.style.backgroundImage = "url('img/jugador.png')";
         }
     }
 
@@ -88,46 +92,21 @@ setInterval(function(){
             if (obstaculo1iz < 1050){
                 var nuevaposobst1 = obstaculo1iz + velocidadmedia;
                 obstaculo1.style.left = nuevaposobst1 + "px";
-            
-                setTimeout(function(){
-                    obstaculo1.style.backgroundImage = "url('img/Personaje1andando1.png')";
-                }, 250);
-
-                setTimeout(function(){
-                    obstaculo1.style.backgroundImage = "url('img/Personaje1andando2.png')";
-        
-                }, 500);
-
-                setTimeout(function(){
-                    obstaculo1.style.backgroundImage = "url('img/Personaje1andando3.png')";
-                }, 800);
-
             }
             else{
                 obstaculo1.dataset.izquierda = false;  
-                obstaculo1.style.backgroundImage = "url('img/Personaje1izquierda.png')";
+                obstaculo1.style.backgroundImage = "url('img/2Personaje1.gif')";
             }
            
         }else if(obstaculo1.dataset.izquierda == "false"){
             if (obstaculo1iz > 10){
                 var nuevaposobst1 = obstaculo1iz - velocidadmedia;
                 obstaculo1.style.left = nuevaposobst1 + "px";
-
-                setTimeout(function(){
-                    obstaculo1.style.backgroundImage = "url('img/2Personaje1andando1.png')";
-                }, 250);
-
-                setTimeout(function(){
-                    obstaculo1.style.backgroundImage = "url('img/2Personaje1andando2.png')";
-                }, 500);
-
-                setTimeout(function(){
-                    obstaculo1.style.backgroundImage = "url('img/2Personaje1andando3.png')";
-                }, 800);
+                obstaculo1.style.backgroundImage = "url('img/2Personaje1.gif')";
 
             }else{
                 obstaculo1.dataset.izquierda = true;
-                obstaculo1.style.backgroundImage = "url('img/Personaje1andando1.png')";
+                obstaculo1.style.backgroundImage = "url('img/Personaje1.gif')";
             }
         }
 
@@ -136,50 +115,21 @@ setInterval(function(){
                 var nuevaposobst2 = obstaculo2iz + velocidadalta;
                 obstaculo2.style.left = nuevaposobst2 + "px";
 
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando1.png')";
-                }, 350);
-
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando2.png')";
-                }, 10);
-
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando3.png')";
-                }, 550);
-
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/Personaje2andando4.png')";
-                }, 800);
-      
-
             }else{
                 obstaculo2.dataset.izquierda = false; 
-                obstaculo2.style.backgroundImage = "url('img/2Personaje2andando1.png')";
-                clearTimeout();
+                obstaculo2.style.backgroundImage = "url('img/2Personaje2.gif')";
             }
            
         }else if(obstaculo2.dataset.izquierda == "false"){
             if (obstaculo2iz > 10){
                 var nuevaposobst2 = obstaculo2iz - velocidadalta;
                 obstaculo2.style.left = nuevaposobst2 + "px";
+                obstaculo2.style.backgroundImage = "url('img/2Personaje2.gif')";
 
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/2Personaje2andando1.png')";
-                }, 300);
-
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/2Personaje2andando2.png')";
-                }, 150);
-
-                setTimeout(function(){
-                    obstaculo2.style.backgroundImage = "url('img/2Personaje2andando3.png')";
-                }, 450);
 
             }else{
                 obstaculo2.dataset.izquierda = true;
-                obstaculo2.style.backgroundImage = "url('img/Personaje2andando1.png')" ;
-                clearTimeout();
+                obstaculo2.style.backgroundImage = "url('img/Personaje2.gif')" ;
             }
         }
 
@@ -190,14 +140,17 @@ setInterval(function(){
             }
             else{
                 obstaculo3.dataset.izquierda = false;   
+                obstaculo3.style.backgroundImage = "url('img/2Personaje3.gif')";
             }
            
         }else if(obstaculo3.dataset.izquierda == "false"){
             if (obstaculo3iz > 10){
                 var nuevaposobst3 = obstaculo3iz - velocidadlenta;
                 obstaculo3.style.left = nuevaposobst3 + "px";
+                obstaculo3.style.backgroundImage = "url('img/2Personaje3.gif')";
             }else{
                 obstaculo3.dataset.izquierda = true;
+                obstaculo3.style.backgroundImage = "url('img/Personaje3.gif')";
             }
         }
 
@@ -206,35 +159,20 @@ setInterval(function(){
                 var nuevaposobst4 = obstaculo4iz + velocidadmedia;
                 obstaculo4.style.left = nuevaposobst4 + "px";
 
-
-                setTimeout(function(){
-                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando1.png')";
-                }, 0);
-
-                setTimeout(function(){
-                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando2.png')";
-                }, 500);
-
-                setTimeout(function(){
-                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando3.png')";
-                }, 750);
-
-                setTimeout(function(){
-                    obstaculo4.style.backgroundImage = "url('img/Personaje4andando4.png')";
-                }, 1000);
-
-            
             }
             else{
                 obstaculo4.dataset.izquierda = false;   
+                obstaculo4.style.backgroundImage = "url('img/2Personaje4.gif')";
             }
            
         }else if(obstaculo4.dataset.izquierda == "false"){
             if (obstaculo4iz > 10){
                 var nuevaposobst4 = obstaculo4iz - velocidadmedia;
                 obstaculo4.style.left = nuevaposobst4 + "px";
+                obstaculo4.style.backgroundImage = "url('img/2Personaje4.gif')";
             }else{
                 obstaculo4.dataset.izquierda = true;
+                obstaculo4.style.backgroundImage = "url('img/Personaje4.gif')";
             }
         }
 
@@ -245,14 +183,17 @@ setInterval(function(){
             }
             else{
                 obstaculo5.dataset.izquierda = false;   
+                obstaculo5.style.backgroundImage = "url('img/2Personaje5.gif')";
             }
            
         }else if(obstaculo5.dataset.izquierda == "false"){
             if (obstaculo5iz > 10){
                 var nuevaposobst5 = obstaculo5iz - velocidadlenta;
                 obstaculo5.style.left = nuevaposobst5 + "px";
+                obstaculo5.style.backgroundImage = "url('img/2Personaje5.gif')";
             }else{
                 obstaculo5.dataset.izquierda = true;
+                obstaculo5.style.backgroundImage = "url('img/Personaje5.gif')";
             }
         }
 
@@ -303,7 +244,7 @@ setInterval(function(){
                 if(topcomida == 5){
                     //Devolvemos el jugador a la posicion incial
                     jugador.style.left = 510 + "px";
-                    jugador.style.top = 520 + "px";
+                    jugador.style.top = 511 + "px";
                 }else{
                     //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
                     jugador.style.left = 510 + "px";
@@ -319,7 +260,7 @@ setInterval(function(){
                 if(topcomida == 5){
                     //Devolvemos el jugador a la posicion incial
                     jugador.style.left = 510 + "px";
-                    jugador.style.top = 520 + "px";
+                    jugador.style.top = 511 + "px";
                 }else{
                     //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
                     jugador.style.left = 510 + "px";
@@ -335,7 +276,7 @@ setInterval(function(){
                 if(topcomida == 5){
                     //Devolvemos el jugador a la posicion incial
                     jugador.style.left = 510 + "px";
-                    jugador.style.top = 520 + "px";
+                    jugador.style.top = 511 + "px";
                 }else{
                     //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
                     jugador.style.left = 510 + "px";
@@ -350,7 +291,7 @@ setInterval(function(){
                 if(topcomida == 5){
                     //Devolvemos el jugador a la posicion incial
                     jugador.style.left = 510 + "px";
-                    jugador.style.top = 520 + "px";
+                    jugador.style.top = 511 + "px";
                 }else{
                     //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
                     jugador.style.left = 510 + "px";
@@ -365,7 +306,7 @@ setInterval(function(){
                 if(topcomida == 5){
                     //Devolvemos el jugador a la posicion incial
                     jugador.style.left = 510 + "px";
-                    jugador.style.top = 520 + "px";
+                    jugador.style.top = 511 + "px";
                 }else{
                     //Colocamos al jugador a la parte superior ya que la cesta se encontraria en la parte inferior de la pantalla
                     jugador.style.left = 510 + "px";
@@ -377,7 +318,7 @@ setInterval(function(){
 
 
     //Funcion para que el jugador pueda recoger la comida de la cesta
-    recoger = setInterval(function(){
+    setInterval(function(){
 
             jugadorw = jugador.offsetWidth;
             jugadorh = jugador.offsetHeight;
@@ -398,12 +339,16 @@ setInterval(function(){
                 velocidadmedia = velocidadmedia + 1 * aumentarvelocidad;
                 velocidadalta = velocidadalta + 1 * aumentarvelocidad;
 
-                //Devolvemos el jugador a su posicion inicial, 
+                //Devolvemos la cesta cuando el jugador colisiona con ella
+
                 if (parseInt(comida.style.top) == 500){
                     comida.style.top = 5 + "px";
-                    comida.style.left = 495 + "px";
+                    comida.style.left = 120 + "px";
                     aumentarpuntos();
 
+                }else if(parseInt(comida.style.top) == 5){
+                    comida.style.top = 500 + "px";
+                    comida.style.left = 850 + "px";
                 }
             
                 else{
@@ -415,7 +360,7 @@ setInterval(function(){
                 aumentarvelocidad++;
                 
                 //Comprobamos que ha conseguido toda la comida y mostramos pantalla del final de juego
-                if (aumentarvelocidad > 4){
+                if(aumentarvelocidad > 4){
                     final();
                 }
                     
@@ -461,7 +406,7 @@ setInterval(function(){
             obstaculo4.style.left = 0 + "px";
             obstaculo5.style.left = 0 + "px";
             jugador.style.left = 510 + "px";
-            jugador.style.top = 520 + "px";
+            jugador.style.top = 511 + "px";
             reiniciar.style.visibility = "visible";
         
     }
@@ -471,7 +416,7 @@ setInterval(function(){
         boton.style.visibility = "hidden";
     })
 
-    reiniciar.addEventListener ("click", function(){
+    siguiente.addEventListener ("click", function(){
         juego = true
         reiniciar.style.visibility = "hidden";
         aumentarvelocidad = 1;
