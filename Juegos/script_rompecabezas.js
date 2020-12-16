@@ -3,11 +3,11 @@
 //cronometro cuenta regresiva
 
 window.onload = updateClock;
-var totalTime = 180;
+var totalTime = 60;
 function updateClock() {
 document.getElementById('countdown').innerHTML = totalTime;
 if(totalTime==0){
-alert('Se acabo el tiempo');
+alert('Se acabo el tiempo, puntuacion 100');
 }else{
 totalTime-=1;
 setTimeout("updateClock()",1000);

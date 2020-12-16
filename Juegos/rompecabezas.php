@@ -53,7 +53,7 @@
               </p>
             </div>
             
-            <a href="../landingpage.html"><img src="Imagenes_puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
+            <a href="../landingpage.php"><img src="Imagenes_puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
             <button type="button" id="siguiente" class="border 1px"></button>
             
           </div>
