@@ -26,7 +26,7 @@ window.onload = function(){
     var derecha = 39;
    
     
-    // variables para detector de colisiones 
+    // variables para detector de colisiones
     var canastaw,canastah,canastax,canastay;
     var producto1w , producto1h, producto1x, producto1y;
     var producto2w , producto2h, producto2x, producto2y;
