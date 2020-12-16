@@ -53,11 +53,11 @@
               </p>
             </div>
             
-            <a href="../landingpage.html"><img src="Imagenes_puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
+            <a href="../landingpage.php"><img src="Imagenes_puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
+            <button type="button" id="siguiente" class="border 1px"></button>
             
           </div>
         
-
 
 
           <svg width="600" height="600" id="entorno">
@@ -81,7 +81,7 @@
           
         <script type="text/javascript" src="script_rompecabezas.js"></script>
 <!-- Footer -->
-<footer class="font-small pt-4 border-top" id="footer">
+<footer class="font-small pt-4 border-top fixed-bottom" id="footer">
 
     <!-- Call to action -->
   

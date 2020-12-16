@@ -1,10 +1,10 @@
 body {
   font-family: "Lato", sans-serif;
-  background-image: url(imagenes_rompecabezas/fondo-pagina.jpg)
+  background-image: url("Imagenes_puzzle/fondo-pagina.jpg");
 }
 
 .sidenav {
-  height: 77%;
+  height: 100%;
   width: 200px;
   position: fixed;
   z-index: 1;
@@ -49,6 +49,8 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
   
 #entorno {
     display: block;
@@ -57,4 +59,17 @@ body {
 
 #fondo{
     opacity: 0.3;
+}
+
+#siguiente{
+  background-image: url("../img/Flechajuego.png");
+  background-size: 100% 100%;
+  background-position: center;
+  border-color: goldenrod !important;
+  position: absolute;
+  left: 489px;
+  height: 80px;
+  width: 80px;
+  top: 270px;
+  border-radius: 30px 30px;
 }

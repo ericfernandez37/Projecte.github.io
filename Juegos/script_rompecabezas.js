@@ -3,11 +3,11 @@
 //cronometro cuenta regresiva
 
 window.onload = updateClock;
-var totalTime = 180;
+var totalTime = 60;
 function updateClock() {
 document.getElementById('countdown').innerHTML = totalTime;
 if(totalTime==0){
-alert('Se acabo el tiempo');
+alert('Se acabo el tiempo, puntuacion 100');
 }else{
 totalTime-=1;
 setTimeout("updateClock()",1000);
@@ -23,7 +23,7 @@ var piezas = document.getElementsByClassName('movil');
 
 var tamWidh = [200,200,200,200,200,200,200,200,200];
 var tamHeight = [180,180,180,180,180,180,180,180,180];
-
+var siguiente = document.getElementById("siguiente");
 
 
 /*añadiremos un bucle for para decirle que que nos seleccione una pieza movil y que añadiremos atributos de tamaño,y que cada vez que
@@ -144,3 +144,8 @@ function victoria(){
 	}
 }
 
+siguiente.addEventListener ("click", function(){
+
+	window.location.href = "";
+
+})
