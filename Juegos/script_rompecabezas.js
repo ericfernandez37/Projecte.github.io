@@ -23,7 +23,7 @@ var piezas = document.getElementsByClassName('movil');
 
 var tamWidh = [200,200,200,200,200,200,200,200,200];
 var tamHeight = [180,180,180,180,180,180,180,180,180];
-
+var siguiente = document.getElementById("siguiente");
 
 
 /*añadiremos un bucle for para decirle que que nos seleccione una pieza movil y que añadiremos atributos de tamaño,y que cada vez que
@@ -144,3 +144,9 @@ function victoria(){
 	}
 }
 
+siguiente.addEventListener ("click", function(){
+	juego = false;
+	siguiente.style.visibility = "hidden";
+	window.location.href = "";
+
+})
