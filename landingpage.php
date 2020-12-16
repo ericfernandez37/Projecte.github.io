@@ -25,10 +25,10 @@
             <a class="nav-link" href="landingpage.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ofertas.html">Ofertas</a>
+            <a class="nav-link" href="ofertas.php">Ofertas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="mercados.html">Tiendas</a>
+            <a class="nav-link" href="mercados.php">Tiendas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link btn text-white" type="button" href="#" data-toggle="modal" data-target="#myModal" id="botoniniciar">Iniciar sessión</a>                  
@@ -41,7 +41,98 @@
     </nav>
 
 
-      <div class="row justify-content-start col-sm-2 col-lg-2 border-right" id="sidebar-izquierdo">
+      <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="http://justinfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Stars Components
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Forms
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Pages
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bar-chart-o fa-2x"></i>
+                        <span class="nav-text">
+                            Graphs and Statistics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-font fa-2x"></i>
+                        <span class="nav-text">
+                           Quotes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa fa-table fa-2x"></i>
+                        <span class="nav-text">
+                            Tables
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Maps
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+
+      <div class="row col-sm-2 col-lg-2 border-right" id="sidebar-izquierdo">
           
         <div id="Ofertas1">
           <h4>Ofertas destacadas</h4>
@@ -92,8 +183,7 @@
 
       </div>
 
-
-      <div class="container">
+      <div class="container" id="noticias">
 
       <div class="row justify-content-center card col-sm-10 col-lg-10" style="max-width: 540px;">
 
@@ -126,8 +216,6 @@
       </div>
 
     </div>
-
-      
 
     <!-- Footer -->
     <footer class="font-small pt-4 border-top fixed-bottom" id="footer">
