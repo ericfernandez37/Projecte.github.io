@@ -44,53 +44,91 @@
 
 
  <!-- ofertas -->
- <section class="py-5">
+ 
+ <section  class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <h3>oferta uno</h3>
-              <p>
-                poner ofertas? 
-              </p>
-            </div>
-          </div>
+        <div class="oferta1" id="oferta1">
+          <div class="card" style="width: 18rem;">
+              <div class="card text-center border-primary">
+                <img src="assets/img/losjueves2x1.png" class="card-img-top" alt="primera oferta" height="215px">
+                <div class="card-body">
+                   <h3 class="card-text"> Por la compra de dos chuletas <br> llevata una de regalo </h3>                           
+                  <button type="submit">canjear cupon</button>
+                </div>
+               </div>
+          </div>    
         </div>
-        <div class="col-md-3">
-          <div class="card text-white bg-primary">
-            <div class="card-body">
-              <h3>oferta dos</h3>
-              <p>
-                poner ofertas? 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-center border-primary">
-            <div class="card-body">
-              <h3>oferta tres</h3>
-              <p>
-              poner oferta
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card text-white bg-primary">
-            <div class="card-body">
-              <h3>oferta cuatro</h3>
-              <p>
-               Pooner oferta ? 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
+
+          
+            <div class="card" style="width: 18rem;">
+              <div class="card text-center border-primary">
+                <img src="assets/img/30-porciento.png" class="card-img-top" alt="promera oferta">
+                <div class="card-body">
+                  <h3 class="card-text">Por la compra de 50 &euro;</h3>
+                  <button type="submit">canjear cupon</button>
+                </div>
+              </div>    
+            </div>
+
+
+
+            <div class="card" style="width: 18rem;">
+              <div class="card text-center border-primary">
+                <img src="assets/img/30-porciento.png" class="card-img-top" alt="promera oferta">
+                <div class="card-body">
+                    <h3 class="card-text">Por la compra de 50 &euro;</h3>
+                     <button type="submit">canjear cupon</button>
+                </div>
+              </div>    
+            </div>
+
+
+
+       
+        
+
+
+
+
+
+
+
+
+                    <!-- <div class="col-md-3">
+                       <div class="card text-center border-primary">
+                         <div class="card-body">
+                           <h3>oferta tres</h3>
+                             <p>
+                                  poner oferta
+                             </p>
+                    </div>
+                        </div>
+                          </div>
+                                 <div class="col-md-3">
+                                    <div class="card text-white bg-primary">
+                                       <div class="card-body">
+                                          <h3>oferta cuatro</h3>
+                                            <p>
+              
+                                                Pooner oferta &euro;? 
+                                            </p>
+                                    </div>
+                                      </div>
+                                        </div-->
+
+
+
+
+
+
+                                         
+      </div> 
+    </div>
+  </section> 
+  </body>
+</html>
 
 
 

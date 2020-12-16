@@ -1,0 +1,17 @@
+#oferta1{
+
+    height: 50px;
+    width: 60px;
+}
+
+#oferta2{
+
+    text-align: center;
+    color: red;
+}
+
+.card-body{
+
+    height: 0x;
+    width: auto;
+}
