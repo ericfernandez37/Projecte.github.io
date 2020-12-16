@@ -99,7 +99,7 @@
 #siguiente{
     background-image: url("../imagenesCesta/Flechajuego.png");
     background-size: 100% 100%;
-    /* background-position: center; */
+    background-position: center;
     border-color: goldenrod !important;
     position: absolute;
     left: 800px;
