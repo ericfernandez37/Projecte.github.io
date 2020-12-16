@@ -35,7 +35,7 @@
     <div id="capanieve"></div>
 <div class="contenedor" style="margin-top: 0%">
     
-    <h1 id="salida" style="margin-top: 4%;margin-left: 15%;">MACEDONIA</h1>
+    <h1 id="salida" style="margin-top: 2.8%; margin-left: 15%;">MACEDONIA</h1>
     <h2 id="puntos" style="margin-left: 55%;">Puntos:</h2>
     <div class="pantalla" id="pantalla" style=" margin-left: 27%;">
         <div class="fruta" id="rojo" data-izquierda="false"></div>

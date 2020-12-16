@@ -53,7 +53,7 @@
 
 
 .contenedor {
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(img/fondo.jpg);
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/fondo.jpg");
     background-size: 100%;
     height: 91%;
     
@@ -65,10 +65,11 @@
     border-radius:35%;
     width: 530px;
     height:510px;
-    background-image: url(img/fondo-pantalla.jpg);
+    background-image: url("../img/fondo-pantalla.jpg");
     margin:20px;
     border-style: solid;
     border-color: black;
+    /*left: 150px;*/
 }
 .fruta {
     position:absolute;
@@ -86,7 +87,7 @@
 }
 #rojo{
     background-color:  #B80303;
-    background-image:url(img/fresa.png) ;
+    background-image: url("../img/fresa.png");
     background-repeat: no-repeat; 
     background-position: center;
     left: 50px;
@@ -95,7 +96,7 @@
 }
 #amarillo{
     background-color:  #D0C703;
-    background-image:url(img/piña.png) ;
+    background-image: url("../img/piña.png");
     background-repeat: no-repeat; 
     background-position: center;
     right: 50px;
@@ -104,7 +105,7 @@
 }
 #naranja{
     background-color:  #FA8603;
-    background-image:url(img/naranja.png) ;
+    background-image: url("../img/naranja.png");
     background-repeat: no-repeat; 
     background-position: center;
     left: 10px;
@@ -113,7 +114,7 @@
 }
 #blanco{
     background-color:  #E0E0E0;
-    background-image:url(img/Dragon.png) ;
+    background-image: url("../img/Dragon.png");
     background-repeat: no-repeat; 
     background-position: center;
     right: 10px;
@@ -122,7 +123,7 @@
 }
 #azul{
     background-color: #057AD0;
-    background-image:url(img/arandano.png) ;
+    background-image: url("../img/arandano.png");
     background-repeat: no-repeat; 
     background-position: center;
     bottom:20px;
@@ -131,7 +132,7 @@
 }
 #verde{
     background-color:  #26B803;
-    background-image:url(img/pera.png);
+    background-image: url("../img/pera.png");
     background-repeat: no-repeat; 
     background-position: center;
     background-size: 70px;

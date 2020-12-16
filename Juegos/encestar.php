@@ -39,7 +39,8 @@
           </ul>
         </div>     
     </nav>
-    
+
+
     <div id="fondojuego" class="container border">
         
         <div id="jugador"></div>
@@ -54,7 +55,9 @@
         <button type="button" id="empezar" class="border 1px">Empezar</button>
         <button type="button" id="siguiente" class="border 1px"></button>
         <div id="nivel"><strong>Nivel</strong></div>
+
     </div>
+    
 
 
 
