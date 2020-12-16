@@ -34,7 +34,7 @@ var obstaculo3 = document.getElementById("paso3");
 var obstaculo4 = document.getElementById("paso4");
 var obstaculo5 = document.getElementById("paso5");
 
-var contador = 60;
+var contador = 6;
 
 siguiente.style.visibility = "hidden";
 
@@ -429,7 +429,7 @@ setInterval(function(){
     siguiente.addEventListener ("click", function(){
         juego = false;
         siguiente.style.visibility = "hidden";
-        window.location.href = "rompecabezas.html";
+        window.location.href = "rompecabezas.php";
 
     })
 
