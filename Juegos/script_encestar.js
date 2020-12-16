@@ -416,7 +416,7 @@ setInterval(function(){
             obstaculo5.style.left = 0 + "px";
             jugador.style.left = 510 + "px";
             jugador.style.top = 511 + "px";
-            reiniciar.style.visibility = "visible";
+            siguiente.style.visibility = "visible";
         
     }
 
