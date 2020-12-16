@@ -41,145 +41,82 @@
     </nav>
 
 
-      <div class="row">
-        <div class="col-sm-2 col-row border-right" id="sidebar-izquierdo">
-          <div id="Ofertas1">
-            <h4>Ofertas destacadas</h4>
-          </div>
-          <div id="menu">
-            <div class="card border" id="cardoferta">
-              <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-              <div class="card-body">
-                <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-              </div>
-            </div>
-            <div class="card border" id="cardoferta">
-              <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-              <div class="card-body">
-                <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-              </div>
-            </div>
-            <div class="card border" id="cardoferta">
-              <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-              <div class="card-body">
-                <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-              </div>
-            </div>
-            <div class="card border " id="cardoferta">
-              <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-              <div class="card-body">
-                <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-              </div>
-            </div>
-          </div>      
-
-
-      
-      
-
-          <div id="sidebar-derecho">
-
-            <div id="Ofertas2">
-
-              <h4>Nuevas ofertas</h4>
-
-            </div>
-
-            <div id="menu2">
-
-              <div class="card border" style="width: 13rem;" id="cardoferta">
-
-                <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-
-                <div class="card-body">
-
-                  <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-
-                </div>
-
-              </div>
-            
-              <div class="card border" id="cardoferta" style="width: 13rem;">
-
-                <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-
-                <div class="card-body">
-
-                  <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-
-                </div>
-
-              </div>
-
-              <div class="card border" id="cardoferta" style="width: 13rem;">
-
-                <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-
-                <div class="card-body">
-
-                  <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-
-                </div>
-
-              </div>
-
-              <div class="card border" id="cardoferta" style="width: 13rem;">
-
-                <img src="img/30-porciento.png" class="card-img-top" height="150px" width="100px">
-
-                <div class="card-body">
-
-                  <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
-
-                </div>
-
-              </div>
-
-
-      </div>
-
-      <div class="card col-sm-10 col-lg-10 col-row" style="max-width: 540px;">
-        <div class="card-header"><h3>Titulo noticia</h3></div>
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2 col-row col-lg-2 border-left" id="sidebar-derecho">
+      <div class="row justify-content-start col-sm-2 col-lg-2 border-right" id="sidebar-izquierdo">
+          
         <div id="Ofertas1">
           <h4>Ofertas destacadas</h4>
         </div>
+
         <div id="menu">
+
           <div class="card border" id="cardoferta">
-            <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+            <img src="assets/img/30-porciento.png" class="card-img-top" height="175px" width="150px">
+          
             <div class="card-body">
               <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
             </div>
+          
           </div>
+          
           <div class="card border" id="cardoferta">
-            <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+
+            <img src="assets/img/30-porciento.png" class="card-img-top" height="175px" width="150px">
+    
             <div class="card-body">
               <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
             </div>
+
           </div>
+    
           <div class="card border" id="cardoferta">
-            <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+    
+            <img src="assets/img/30-porciento.png" class="card-img-top" height="175px" width="150px">
+    
             <div class="card-body">
               <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
             </div>
+            
           </div>
+            
           <div class="card border " id="cardoferta">
-            <img src="assets/img/30-porciento.png" class="card-img-top" height="150px" width="100px">
+      
+            <img src="assets/img/30-porciento.png" class="card-img-top" height="175px" width="150px">
+      
             <div class="card-body">
               <p class="card-text">Texto para poner breve descripción sobre la oferta</p>
+            </div>
+        
+          </div>
+        
+        </div>      
+
+      </div>
+
+
+      <div class="container">
+
+      <div class="row justify-content-center card col-sm-10 col-lg-10" style="max-width: 540px;">
+
+        <div class="card-header"><h3>Titulo noticia</h3></div>
+
+        <div class="row no-gutters">
+
+          <div class="col-md-4">
+
+            <img src="..." class="card-img" alt="...">
+
+          </div>
+
+          <div class="col-md-8">
+
+            <div class="card-body">
+
+              <h5 class="card-title">Card title</h5>
+
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
             </div>
 
           </div>
@@ -190,8 +127,10 @@
 
     </div>
 
+      
+
     <!-- Footer -->
-    <footer class="font-small pt-4 border-top" id="footer">
+    <footer class="font-small pt-4 border-top fixed-bottom" id="footer">
       <!-- Call to action -->
     
       <!-- Social buttons -->

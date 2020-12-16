@@ -7,12 +7,8 @@
 }
 
 #Ofertas1{
-    margin-left: 5px;
+    margin-left: 15px;
     color: #ffffff;
-}
-
-.row{
-    width: 100%;
 }
 
 #menu{
@@ -23,14 +19,7 @@
     margin-top: 10px;
     border-color:  #505050 !important;
     width: 200px;
+    float: center;
 }
 
-#sidebar-derecho{
-    height: 100%;
-    background-color: #BDBDBD;
-    padding-top: 53px;
-    border-color: #505050 !important;
-    padding-bottom: 5px;
-    float: right;
-}
 
