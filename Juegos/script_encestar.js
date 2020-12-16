@@ -1,7 +1,6 @@
 window.onload = function(){
 var juego = false;
 var aumentarvelocidad = 1;
-var fondo = document.getElementById("fondojuego");
 var izquierda = 37;
 var derecha = 39;
 var arriba = 38;
