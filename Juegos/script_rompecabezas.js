@@ -145,8 +145,7 @@ function victoria(){
 }
 
 siguiente.addEventListener ("click", function(){
-	juego = false;
-	siguiente.style.visibility = "hidden";
+
 	window.location.href = "";
 
 })
