@@ -131,3 +131,12 @@
     top: 270px;
     border-radius: 30px 30px;
 }
+
+#nivel{
+    height: 80px;
+    width: 90px;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    font-size: 18px;
+}

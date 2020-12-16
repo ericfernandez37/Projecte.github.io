@@ -9,8 +9,11 @@ var abajo = 40;
 var jugador = document.getElementById("jugador");
 var comida = document.getElementById("final");
 var boton = document.getElementById("empezar");
-var reiniciar = document.getElementById("siguiente");
+var siguiente = document.getElementById("siguiente");
 var puntuacio = document.getElementById("puntuacio");
+var nivel = document.getElementById("nivel");
+nivel = 1;
+document.getElementById("nivel").innerHTML = "<strong>Nivel: " + nivel + "</strong>";
 document.getElementById("puntuacio").innerHTML = "<p><strong>Puntuación</strong> <br> </p>";
 puntuacio = 0;
 //Variables para poder hacer el detector de colisiones
@@ -34,7 +37,7 @@ var obstaculo5 = document.getElementById("paso5");
 
 var contador = 60;
 
-reiniciar.style.visibility = "hidden";
+siguiente.style.visibility = "hidden";
 
 document.addEventListener('keyup', function(event){
 
@@ -365,7 +368,7 @@ setInterval(function(){
                 aumentarvelocidad++;
                 
                 //Comprobamos que ha conseguido toda la comida y mostramos pantalla del final de juego
-                if(aumentarvelocidad > 5){
+                if(aumentarvelocidad >= 6){
                     final();
                 }
                     
@@ -390,9 +393,11 @@ setInterval(function(){
     function aumentarpuntos(){
        
         //Ponemos que el condicional sea igual true para que no se sumen los punto si se acaba el juego
-        if (aumentarvelocidad < 5 && juego == true){
+        if (aumentarvelocidad <= 6 && juego == true){
             puntuacio += 150;
+            nivel += 1;
             document.getElementById("puntuacio").innerHTML = "<p><strong>Puntuación <br>" + puntuacio + "</strong></p>";
+            document.getElementById("nivel").innerHTML = "<strong>Nivel: "+ nivel +"</strong>";
         }
     }
 
@@ -406,9 +411,9 @@ setInterval(function(){
             }
             juego = false;
             obstaculo1.style.left = 0 + "px";
-            obstaculo2.style.left = 0 + "px";
+            obstaculo2.style.left = 1050 + "px";
             obstaculo3.style.left = 0 + "px";
-            obstaculo4.style.left = 0 + "px";
+            obstaculo4.style.left = 1050 + "px";
             obstaculo5.style.left = 0 + "px";
             jugador.style.left = 510 + "px";
             jugador.style.top = 511 + "px";
@@ -419,6 +424,7 @@ setInterval(function(){
     boton.addEventListener("click", function(){
         juego = true;
         boton.style.visibility = "hidden";
+        
     })
 
     siguiente.addEventListener ("click", function(){
