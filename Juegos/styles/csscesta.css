@@ -1,0 +1,110 @@
+#fondoJuego{
+    background-image: url("../imagenesCesta/descarga.jpg");
+    width: 800px;
+    height: 500px;
+    background-size: 100%  100% ;
+    /* margin: auto; */
+    position: relative;
+    top: 75px;
+}
+#canasta{
+    background-image: url("../imagenesCesta/canasta.png");
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    /* background-color: hotpink; */
+    position: absolute;
+    top: 430px;
+    left: 320px;
+
+}
+.productos{
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%; 
+    position: absolute;
+}
+#producto1{
+     background-image: url("../imagenesCesta/Churros.png"); 
+    /* background-size: cover; */
+    /* background-color: red; */
+    top: 0px;
+    left: 0px;
+   
+}
+#producto2{
+     background-image: url("../imagenesCesta/Cream_Puff.png"); 
+    /* background-size: cover; */
+    /* background-color: black; */
+    left: 320px;
+    top: 0px;
+    
+}
+#producto3{
+     background-image: url("../imagenesCesta/BreadSU.png"); 
+    /* background-size: cover;   */
+     /* background-color: green; */
+   left: 730px;
+   top: 0px;
+}   
+
+
+
+#contador{
+    left: 700px;
+    background-color: rgba(255, 255, 255, 0.288);
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 0px;
+    color:black;   
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border-color: rgb(218, 32, 119) !important; */
+}
+
+#puntuacion{
+
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.247);
+    width: 100px;
+    height: 50px;
+    top: 0px;
+    position: absolute;
+    color: black;   
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border-color: rgb(32, 91, 218) !important; */
+}
+
+#footer{
+
+    height: 150px;
+}
+
+#empezar{
+    
+    left: 310px;
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    font-size: 50px;
+    top: 210px;
+    color: black;
+    background-position: center;
+    background-color:wheat;
+}
+
+
+#siguiente{
+    background-image: url("../imagenesCesta/Flechajuego.png");
+    background-size: 100% 100%;
+    /* background-position: center; */
+    border-color: goldenrod !important;
+    position: absolute;
+    left: 800px;
+    height: 100px;
+    width: 100px;
+    top: 210px;
+    border-radius: 30px 30px;
+}
