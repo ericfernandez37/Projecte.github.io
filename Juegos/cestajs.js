@@ -284,14 +284,7 @@ window.onload = function(){
        
     },100);
 
-         function velocidadProductos(){
-
-            if(aumentarvelocidad < 6 && juego == true ){
-                 puntuacion += 50;
-                 }
-             }
-
-
+    
              function final(){ //funcion para terminar juego 
                 alert("juego finalizado");
                 juego = false;
