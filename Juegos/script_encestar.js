@@ -67,7 +67,7 @@ document.addEventListener('keyup', function(event){
 
     if (event.keyCode == arriba){
         var Top   = parseInt(window.getComputedStyle(jugador).getPropertyValue("top"));
-        if (Top > 20){
+        if (Top > 30){
             var nuevapos = Top - velocidad;
             jugador.style.top = nuevapos + "px";
             jugador.style.backgroundImage = "url('img/jugador.png')";
@@ -341,21 +341,26 @@ setInterval(function(){
 
                 //Devolvemos la cesta cuando el jugador colisiona con ella
 
-                if (parseInt(comida.style.top) == 500){
+                if (parseInt(comida.style.top) == 500 && parseInt(comida.style.left) == 120){
                     comida.style.top = 5 + "px";
-                    comida.style.left = 120 + "px";
-                    aumentarpuntos();
+                    comida.style.left = 850 + "px";
 
                 }else if(parseInt(comida.style.top) == 5){
                     comida.style.top = 500 + "px";
                     comida.style.left = 850 + "px";
+                    
+
+                }else if(parseInt(comida.style.left) == 850){
+                    comida.style.top = 5 + "px";
+                    comida.style.left = 120 + "px";
                 }
             
                 else{
                     comida.style.top = 500 + "px";
-                    comida.style.left = 495 + "px";
-                    aumentarpuntos();
+                    comida.style.left = 120 + "px";
+                    
                 }
+                aumentarpuntos();
                 //Incrementamos la velocidad de los obstaculos cuando el jugador colisiona con la cesta
                 aumentarvelocidad++;
                 
@@ -417,13 +422,9 @@ setInterval(function(){
     })
 
     siguiente.addEventListener ("click", function(){
-        juego = true
-        reiniciar.style.visibility = "hidden";
-        aumentarvelocidad = 1;
-        contador = 10;
-        puntuacio = 0;
-        document.getElementById("puntuacio").innerHTML = "<strong><p>Puntuación <br>" + puntuacio + "</p></strong>";
-        document.getElementById("contador").innerHTML = "<strong><p>Tiempo <br>" + contador + "</p></strong>";
+        juego = false;
+        siguiente.style.visibility = "hidden";
+        window.location.href = "rompecabezas.html";
 
     })
 
