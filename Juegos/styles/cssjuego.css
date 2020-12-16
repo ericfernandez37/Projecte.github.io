@@ -1,0 +1,165 @@
+
+#footer{
+    background-color: #40403E;
+    border-color: #505050 !important;
+}
+
+#botonregistr{
+    background-color: #6d9eeb;
+    border-radius: 15px;
+}
+#navbar{
+    background-color: #80807D;
+    color: #ffffff;
+    border-color: #505050 !important; 
+    width: 100% !important;
+}
+#botonregistnav{
+    background-color: #915876;
+    border-radius: 30px;
+    margin-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+}
+
+#botoniniciar{
+    background-color: #c27ba0;
+    border-radius: 30px;
+    margin-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+}
+.fab{
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#capanieve {
+    position: fixed ; z-index:2; 
+    top: -10vh; left: 0; 
+    height: 120vh; 
+    width: 100vw; 
+    pointer-events: none; 
+    }
+    #capanieve .nieve { 
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 2.2vmin; height: 2.2vmin; 
+    background: radial-gradient(circle, white 40%, transparent 75%); 
+    }
+
+
+.contenedor {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/fondo.jpg");
+    background-size: 100%;
+    height: 91%;
+    
+}
+.pantalla{
+    margin-right:500px;
+    margin-top:10%;
+    position:relative ; z-index:1;
+    border-radius:35%;
+    width: 530px;
+    height:510px;
+    background-image: url("../img/fondo-pantalla.jpg");
+    margin:20px;
+    border-style: solid;
+    border-color: black;
+    /*left: 150px;*/
+}
+.fruta {
+    position:absolute;
+    width:210px;
+    height:150px;
+    background:rgba(20,20,20,1);
+   
+}
+.frutamed {
+    position:absolute;
+    width:240px;
+    height:150px;
+    background:rgba(20,20,20,1);
+    
+}
+#rojo{
+    background-color:  #B80303;
+    background-image: url("../img/fresa.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    left: 50px;
+    top: 20px;
+    border-radius:50% 10px 10px;
+}
+#amarillo{
+    background-color:  #D0C703;
+    background-image: url("../img/piña.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    right: 50px;
+    top: 20px;
+    border-radius : 10px 50% 10px 10px;
+}
+#naranja{
+    background-color:  #FA8603;
+    background-image: url("../img/naranja.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    left: 10px;
+    top: 177px;
+    border-radius : 65px 10px 10px 65px;
+}
+#blanco{
+    background-color:  #E0E0E0;
+    background-image: url("../img/Dragon.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    right: 10px;
+    top: 177px;
+    border-radius : 10px 65px 65px 10px;
+}
+#azul{
+    background-color: #057AD0;
+    background-image: url("../img/arandano.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    bottom:20px;
+    left: 50px;
+    border-radius: 10px 10px 10px 50%;
+}
+#verde{
+    background-color:  #26B803;
+    background-image: url("../img/pera.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 70px;
+    right: 50px;
+    bottom: 20px;
+    border-radius: 10px 10px 50% 10px;
+}
+.macedonia{
+    position:absolute;
+    cursor: pointer;
+    display:block;
+    background: gray;
+    width:150px;
+    height:200px;
+    border-radius:65px;
+    left:47%;
+    top:42%;
+    text-align:center;
+    margin:-60px;
+    border-style: solid;
+    border-color: black;
+    font-size: 35px;
+    color: white;
+}
+
+#cuenta{
+    text-align: center;
+    font-size: 70px;
+    padding-top:7%;
+}

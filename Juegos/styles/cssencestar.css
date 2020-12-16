@@ -1,6 +1,16 @@
+body{
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/fondo-carne.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 #fondojuego{
-    background-image: url("../img/fondo.jpg");
-    margin-top: 70px;
+    background-image: url("../img/fondojuego.jpg");
+    margin-top: 100px;
     padding-top: 80px;
     padding-bottom: 500px;
     background-repeat: no-repeat;

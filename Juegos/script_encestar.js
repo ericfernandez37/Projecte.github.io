@@ -34,7 +34,7 @@ var obstaculo3 = document.getElementById("paso3");
 var obstaculo4 = document.getElementById("paso4");
 var obstaculo5 = document.getElementById("paso5");
 
-var contador = 6;
+var contador = 60;
 
 siguiente.style.visibility = "hidden";
 
