@@ -46,13 +46,16 @@ if (isset($_SESSION['identificador'])) {
 <?php startblock('principal') ?>
 <div class="container h-100 pt-5 mt-5">
     <div class="row align-items-center h-100">
-        <div class="card text-white bg-dark m-auto col-sm-10 col-md-7 text-center">
+        <div class="card text-white bg-dark m-auto col-sm-10 col-md-6 text-center">
             <div id="infobox" class="  ">
                 <div>
-                <?php echo $content["juegomarc"]["points"]; ?>: <span id="points">0</span>
+                    <p><?php echo $content["juegomarc"]["explanation"]; ?></p>
                 </div>
                 <div>
-                <?php echo $content["juegomarc"]["time"]; ?>: <span id="time"></span>
+                    <?php echo $content["juegomarc"]["points"]; ?>: <span id="points">0</span>
+                </div>
+                <div>
+                    <?php echo $content["juegomarc"]["time"]; ?>: <span id="time"></span>
                 </div>
                 <button class="gameButton"><?php echo $content["juegomarc"]["start"]; ?></button>
             </div>

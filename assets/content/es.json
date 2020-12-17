@@ -21,6 +21,7 @@
     },
     "juegomarc": {
         "pagetitle": "Juego",
+        "explanation": "Este juego consiste en arrastrar cada comida a su tienda",
         "modalnextgame" : "Siguiente Juego",
         "modalrestart": "Reiniciar juego",
         "modaltitle": "¡Has completado el Juego!",

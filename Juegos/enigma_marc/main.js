@@ -50,10 +50,12 @@ const game = {
             const category = item.category;
             if (!categories.includes(category)) {
                 categories.push(category);
-                const div = $("<div data-category='"+ category +"' class='mb-2  droppable " + category +"'>" + category + "</div>")
+                const div = $("<div data-category='"+ category +"' class='mb-2  droppable " + category +"'></div>")
                     .css({
-                        "background-color": game.getRandomColor(category),
-                        "min-height": "150px",
+                        "background-image": game.getRandomColor(category),
+                        "background-repeat": "no-repeat",
+                        "background-size": "cover",
+                        "min-height": "170px",
                         "min-width": "150px",
                         "vertical-align": "center",
                     })
@@ -87,7 +89,7 @@ const game = {
         const div = $(
             '<div id="draggable" data-category="'+ nextItem.category +'" class="mx-auto ' +
                 nextItem.category +
-                '"> <div class="p-2"><img src="Juegos/enigma_marc/img/' + 
+                '"> <div class=""><img src="Juegos/enigma_marc/img/' + 
                 nextItem.name +
                 '.png" class="rounded" alt="' +
                 nextItem.name +
@@ -108,16 +110,16 @@ const game = {
         var letters = "0123456789ABCDEF";
         var color = "#";
         if (category == "Pescado") {
-            color = "#00BFFF";
+            color = "url('Juegos/enigma_marc/img/Pescaderia.jpg";
         }
         if (category == "Verdura") {
-            color = "#228B22";
+            color = "url('Juegos/enigma_marc/img/Verduleria.jpg";
         }
         if (category == "Fruta") {
-            color = "#FF0000";
+            color = "url('Juegos/enigma_marc/img/Fruteria.jpg";
         }
         if (category == "Carne") {
-            color = "#B52204";
+            color = "url('Juegos/enigma_marc/img/Carniceria.jpg";
         }
         return color;
     },

@@ -21,6 +21,7 @@
     },
     "juegomarc": {
         "pagetitle": "Joc",
+        "explanation": "Aquest joc consisteix en arrosegar cada menjar a la seva botiga",
         "modalnextgame" : "Següent joc",
         "modalrestart": "Reiniciar joc",
         "modaltitle": "Has completat el joc!",

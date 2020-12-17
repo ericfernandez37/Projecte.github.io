@@ -21,6 +21,7 @@
     },
     "juegomarc": {
         "pagetitle": "Game",
+        "explanation": "This game consists on dragging each food to it's shop",
         "modalnextgame" : "Next game",
         "modalrestart": "Restart game",
         "modaltitle": "You've completed the game!",
