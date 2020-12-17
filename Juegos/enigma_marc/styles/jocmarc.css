@@ -1,0 +1,19 @@
+/* Se cambia el color de fondo. */
+html, body {
+    height: 100%;
+    background-color: #8DACCC;
+}
+#draggable{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+}
+.timeDanger{
+    color: red;
+}
+#infobox div{
+    border: solid;
+    background-color: black;
+    color: white;
+}

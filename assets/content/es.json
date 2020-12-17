@@ -18,5 +18,8 @@
     "register": {
         "pagetitle": "Registro",
         "title": "Registro"
+    },
+    "juegomarc": {
+        "pagetitle": "Juego"
     }
 }
