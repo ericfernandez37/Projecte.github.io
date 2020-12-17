@@ -103,5 +103,5 @@ $content = json_decode($contentJson, true);
     </nav>
     <?php startblock('principal') ?><?php endblock() ?>
 </body>
-
+<?php startblock('ownJS_bottom') ?><?php endblock() ?>
 </html>
