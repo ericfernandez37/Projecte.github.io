@@ -78,10 +78,9 @@
         </div>
 
         <br>
-
         
         <button type="button" id="siguiente" class="border 2px"></button>
-        
+
 
         <audio id="win" src="media/victoria.mp3"></audio>
           
