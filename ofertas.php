@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/libraries/Font-awesome/css/all.css">
     <link rel="stylesheet" href="assets/css/micss.css" type="text/css">
     <llink rel="stylesheet" href="css/cssmercados.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/ofertas.css" type="text/css">
   </head>
 
 
@@ -43,11 +44,44 @@
 
 
 
- <!-- ofertas -->
+ <!-- sidebar -->
  
- <section  class="py-5">
-    <div class="container">
-      <div class="row">
+<div class="container-fluid" id="container">
+
+<div class="row">
+
+  <div class="col-2 px-1 position-fixed" id="sidebar-fija">
+
+    <div class="nav flex-column flex-nowrap 100px overflow-auto text-white">
+
+      <h3><u>Menú</u></h3>
+
+      <hr id="separador">
+
+      <a style="text-decoration:none" href="landing.php"><i class="fas fa-home fa-2x"></i> Home</a>
+
+      <hr id="separador">
+
+      <a style="text-decoration:none" href="mercados.php"><i class="fas fa-store-alt fa-2x"></i> Tiendas</a>
+
+      <hr id="separador">
+
+      <a style="text-decoration:none" href="ofertas.php"><i class="fas fa-tags fa-2x"></i> Ofertas</a>
+
+      <hr id="separador">
+
+      <a style="text-decoration:none" href="Juegos/juego.php"><i class="fas fa-dice fa-2x"></i> Juegos</a>
+    
+    </div>
+
+  </div>
+
+
+   <!-- ofertas -->
+
+       <!-- <section  class="py-5">
+         <div class="container">
+      
         <div class="oferta1" id="oferta1">
           <div class="card" style="width: 18rem;">
               <div class="card text-center border-primary">
@@ -57,7 +91,7 @@
                   <button type="submit">canjear cupon</button>
                 </div>
                </div>
-          </div>    
+          </div>
         </div>
 
 
@@ -85,136 +119,54 @@
             </div>
 
 
-
-       
-        
-
-
-
-
-
-
-
-
-                    <!-- <div class="col-md-3">
-                       <div class="card text-center border-primary">
-                         <div class="card-body">
-                           <h3>oferta tres</h3>
-                             <p>
-                                  poner oferta
-                             </p>
-                    </div>
-                        </div>
-                          </div>
-                                 <div class="col-md-3">
-                                    <div class="card text-white bg-primary">
-                                       <div class="card-body">
-                                          <h3>oferta cuatro</h3>
-                                            <p>
-              
-                                                Pooner oferta &euro;? 
-                                            </p>
-                                    </div>
-                                      </div>
-                                        </div-->
-
-
-
-
-
-
                                          
-      </div> 
-    </div>
-  </section> 
-  </body>
-</html>
+   </div> 
+  </div>
+     </section>  -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small pt-4 fixed-bottom" id="footer">
-
-    <!-- Call to action -->
-  
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter-square fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-gplus mx-1">
-          <i class="fab fa-google-plus fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin fa-2x"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-github mx-1">
-          <i class="fab fa-github fa-2x"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
-
-    <!--
-    <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-          <h5 class="mb-1">Registrate gratis!</h5>
-        </li>
-        <li class="list-inline-item">
-          <a href="#!" class="btn btn-rounded" id="botonregistr">Registrarse</a>
-        </li>
-      </ul>
-      -->
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">Conocenos mas:
-      <a href="https://politecnics.barcelona/">Politecnics</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+ <!-- Footer -->
+ <footer class="font-small pt-4 border-top fixed-bottom" id="footer">
+        <!-- Call to action -->
+      
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+              <i class="fab fa-facebook fa-2x"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+              <i class="fab fa-twitter-square fa-2x"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-google-plus fa-2x"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+              <i class="fab fa-linkedin fa-2x"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-github mx-1">
+              <i class="fab fa-github fa-2x"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Conocenos mas:
+          <a href="https://politecnics.barcelona/">Politecnics</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
 
 </body>
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -74,9 +74,9 @@ window.onload = function(){
             var posiciontopnueva2;
             var posiciontopnueva3;
 
-            if(producto1top <= 450){
+            if(producto1top < 450){
               
-                 posiciontopnueva1 = producto1top + 5;
+                 posiciontopnueva1 = producto1top + 6;
                 producto1.style.top = posiciontopnueva1 +'px';
                 
                 
@@ -96,7 +96,7 @@ window.onload = function(){
             } else if (producto2top >= 450 ){
                 producto2.style.top = '0px';
                 producto2.style.left = numAleatorio() + 'px';
-                producto3.style.backgroundImage = imagenAleatoria();//recoremos la funcion para cambio de imagenes 
+                producto2.style.backgroundImage = imagenAleatoria();//recoremos la funcion para cambio de imagenes 
             }
 
             if(producto3top < 450){
@@ -112,7 +112,7 @@ window.onload = function(){
             
         }    
 
-    },50);
+    }, 50);
     
    function numAleatorio(){ // funcio per que els productes es moguin aleatoriament 
        var numAleatorio = Math.floor(Math.random() *5 );
@@ -145,37 +145,37 @@ window.onload = function(){
 
             switch (numAleatorioImg){
      
-             case 0 : var imagen = "url('imagenes/135.png')";
+             case 0 : var imagen = "url('imagenesCesta/135.png')";
              break;
      
-             case 1  : var imagen= "url('imagenes/Apple_Pie.png')";
+             case 1  : var imagen= "url('imagenesCesta/Apple_Pie.png')";
              break;
      
-             case 2  : var imagen= "url('imagenes/Bagel.png')";
+             case 2  : var imagen= "url('imagenesCesta/Bagel.png')";
              break;
      
-             case 3  : var imagen = "url('imagenes/Banana_Bread.png')";
+             case 3  : var imagen = "url('imagenesCesta/Banana_Bread.png')";
              break;
      
-             case 4  : var imagen = "url('imagenes/BreadSU.png')";
+             case 4  : var imagen = "url('imagenesCesta/BreadSU.png')";
              break;
              
-             case 5  : var imagen = "url('imagenes/Cake.png')";
+             case 5  : var imagen = "url('imagenesCesta/Cake.png')";
              break; 
              
-             case 6  : var imagen = "url('imagenes/Churros.png')";
+             case 6  : var imagen = "url('imagenesCesta/Churros.png')";
              break;   
              
-             case 7  : var imagen = "url('imagenes/Cinnamon_Bun.png')";
+             case 7  : var imagen = "url('imagenesCesta/Cinnamon_Bun.png')";
              break; 
              
-             case 8  : var imagen = "url('imagenes/Cream_Puff.png')";
+             case 8  : var imagen = "url('imagenesCesta/Cream_Puff.png')";
              break;  
              
-             case 9  : var imagen = "url('imagenes/Cupcake.png')";
+             case 9  : var imagen = "url('imagenesCesta/Cupcake.png')";
              break; 
              
-             case 10 : var imagen = "url('imagenes/GingerbreadSU.png')";
+             case 10 : var imagen = "url('imagenesCesta/GingerbreadSU.png')";
              break;
              
                 
@@ -288,12 +288,14 @@ window.onload = function(){
              function final(){ //funcion para terminar juego 
                 alert("juego finalizado");
                 juego = false;
+                siguiente.style.visibility = "visible";
             }
             
     
             botonIniciar.addEventListener("click", function(){//funcion para empezar juego 
                 juego = true;
                 botonIniciar.style.visibility = "hidden";
+                siguiente.style.visibility = "hidden";
             })
     
 

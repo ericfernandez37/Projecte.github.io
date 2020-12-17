@@ -1,0 +1,43 @@
+#oferta1{
+
+    height: 50px;
+    width: 60px;
+}
+
+#oferta2{
+
+    text-align: center;
+    color: red;
+}
+
+.card-body{
+
+    height: 0x;
+    width: auto;
+}
+
+#sidebar-fija{
+    top: 57px;
+    left: 0px;
+    background-color: #747474;
+    height: 100%;
+    width: 15%;
+}
+
+#sidebar-fija a{
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+#container{
+    width: 1600px;
+    left: 0px;
+}
+
+#sidebar-fija a:hover{
+    color: red;
+    border: 1px;
+    border-color: red;
+}
