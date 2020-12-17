@@ -20,6 +20,13 @@
         "title": "Registre"
     },
     "juegomarc": {
-        "pagetitle": "Joc"
+        "pagetitle": "Joc",
+        "modalnextgame" : "Següent joc",
+        "modalrestart": "Reiniciar joc",
+        "modaltitle": "Has completat el joc!",
+        "points": "Puntuació",
+        "start": "Començar joc",
+        "time": "Temps"
+        
     }
 }

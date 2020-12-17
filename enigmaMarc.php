@@ -8,7 +8,7 @@
  * Fecha: -
  */
 
-$currentPage = "login.php";
+$currentPage = "enigmaMarc.php";
 include_once "assets/templates/master.php";
 
 error_reporting(E_ALL);
@@ -49,12 +49,12 @@ if (isset($_SESSION['identificador'])) {
         <div class="card text-white bg-dark m-auto col-sm-10 col-md-7 text-center">
             <div id="infobox" class="  ">
                 <div>
-                    Points: <span id="points">0</span>
+                <?php echo $content["juegomarc"]["points"]; ?>: <span id="points">0</span>
                 </div>
                 <div>
-                    Time: <span id="time"></span>
+                <?php echo $content["juegomarc"]["time"]; ?>: <span id="time"></span>
                 </div>
-                <button class="gameButton">Start Game</button>
+                <button class="gameButton"><?php echo $content["juegomarc"]["start"]; ?></button>
             </div>
             <div id="board">
             </div>
@@ -62,11 +62,11 @@ if (isset($_SESSION['identificador'])) {
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title text-dark">¡Has completado el Juego!</h5>
+                            <h5 class="modal-title text-dark"><?php echo $content["juegomarc"]["modaltitle"]; ?></h5>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="gameButton btn btn-primary">Volver a Jugar</button>
-                            <button type="button" class="btn btn-success" href="#">Siguiente Juego</button>
+                            <button type="button" data-dismiss="modal" class="gameButton btn btn-primary"><?php echo $content["juegomarc"]["modalrestart"]; ?></button>
+                            <button type="button" class="btn btn-success" href="#"><?php echo $content["juegomarc"]["modalnextgame"]; ?></button>
                         </div>
                     </div>
                 </div>

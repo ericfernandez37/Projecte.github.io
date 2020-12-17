@@ -20,6 +20,12 @@
         "title": "Registro"
     },
     "juegomarc": {
-        "pagetitle": "Juego"
+        "pagetitle": "Juego",
+        "modalnextgame" : "Siguiente Juego",
+        "modalrestart": "Reiniciar juego",
+        "modaltitle": "¡Has completado el Juego!",
+        "points": "Puntuación",
+        "start": "Comenzar juego",
+        "time": "Tiempo"
     }
 }
