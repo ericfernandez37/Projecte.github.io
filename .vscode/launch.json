@@ -11,7 +11,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080/Projecte.github.io/Juegos/cesta.php",
+            "url": "http://localhost:80/Projecte.github.io/juegos/rompecabezas.php",
             "webRoot": "${workspaceFolder}"
         }
     ]

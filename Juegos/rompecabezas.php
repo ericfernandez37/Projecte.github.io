@@ -53,9 +53,9 @@
               </p>
             </div>
             
-            <a href="../landingpage.php"><img src="Imagenes_puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
-            <button type="button" id="siguiente" class="border 1px"></button>
-            
+            <div id="botonfondo" class="container">
+              <a href="../landingpage.php"><img src="Imagenes_puzzle/regresar.png" height="30" width="45" alt="Botón"></a>
+            </div> 
           </div>
         
 
@@ -76,6 +76,12 @@
         <div class="ganador">
           
         </div>
+
+        <br>
+
+        
+        <button type="button" id="siguiente" class="border 2px"></button>
+        
 
         <audio id="win" src="media/victoria.mp3"></audio>
           

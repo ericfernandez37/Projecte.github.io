@@ -144,8 +144,9 @@ function victoria(){
 	}
 }
 
-siguiente.addEventListener ("click", function(){
-
-	window.location.href = "";
+siguiente.addEventListener ("click", function(){ //funcion para pasar a siguiente juego 
+	juego = false;
+	siguiente.style.visibility = "hidden";
+	window.location.href = "../enigmaMarc.php";
 
 })
